@@ -1,5 +1,5 @@
 import { Logo, FormRow } from "@bikers-community/ui"
-import Wrapper from "@bikers-community/ui";
+import Wrapper from '../assets/wrappers/RegisterAndLoginPage';
 import { Link } from "react-router-dom";
 
 const Login: React.FC = () => {

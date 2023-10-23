@@ -1,1 +1,3 @@
-export * from './lib/lib/models';
+export * from './bike';
+export * from './general/object_id';
+export * from './booking';

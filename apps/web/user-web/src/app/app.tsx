@@ -1,53 +1,24 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {
+  Login,
+} from './pages';
 
-import NxWelcome from './nx-welcome';
+export const checkDefaultTheme = () => {
+  const isDarkTheme = localStorage.getItem('darkTheme') === 'true';
+  document.body.classList.toggle('dark-theme', isDarkTheme);
+  return isDarkTheme;
+};
 
-import { Route, Routes, Link } from 'react-router-dom';
+checkDefaultTheme();
 
-export function App() {
-  return (
-    <div>
-      <NxWelcome title="user-web" />
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Login />,
+  },
+]);
 
-      {/* START: routes */}
-      {/* These routes and navigation have been generated for you */}
-      {/* Feel free to move and update them to fit your needs */}
-      <br />
-      <hr />
-      <br />
-      <div role="navigation">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/page-2">Page 2</Link>
-          </li>
-        </ul>
-      </div>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              This is the generated root route.{' '}
-              <Link to="/page-2">Click here for page 2.</Link>
-            </div>
-          }
-        />
-        <Route
-          path="/page-2"
-          element={
-            <div>
-              <Link to="/">Click here to go back to root page.</Link>
-            </div>
-          }
-        />
-      </Routes>
-      {/* END: routes */}
-    </div>
-  );
-}
-
+const App = () => {
+  return <RouterProvider router={router} />;
+};
 export default App;

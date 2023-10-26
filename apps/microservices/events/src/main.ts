@@ -7,7 +7,7 @@ import express from 'express';
 import amqplib, { Channel, Connection } from 'amqplib';
 import { env } from './utils/enviroment';
 
-import { ApiRouterV1 } from './v1/router';
+import { ApiRouterEventV1 } from './v1/routerEvent';
 
 const app = express();
 
@@ -28,7 +28,7 @@ async function main() {
         next();
     })
     server.on('error', console.error);
-    app.use('/api/v1/events', ApiRouterV1);
+    app.use('/api/v1/events', ApiRouterEventV1);
 }
 
 main()

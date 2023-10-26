@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import * as Validator from './validator';
+import * as Validator from './validatorEvent';
 import { Event, validate } from '@bikers-community/models';
-import { EventController } from './controller';
+import { EventController } from './controllerEvent';
 import { Types } from 'mongoose';
 const router = Router();
 
@@ -28,4 +28,4 @@ router
     })
     
 
-export const ApiRouterV1 = router;
+export const ApiRouterEventV1 = router;

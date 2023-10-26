@@ -1,5 +1,5 @@
 import { Types } from 'mongoose';
-import { EventDataStore } from './db/datastore';
+import { EventDataStore } from './db/datastoreEvent';
 import {  NewEvent, Event, UpdateEvent } from '@bikers-community/models';
 import { Channel } from 'amqplib';
 

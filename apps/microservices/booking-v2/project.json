@@ -1,7 +1,7 @@
 {
-  "name": "booking",
+  "name": "booking-v2",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/microservices/booking/src",
+  "sourceRoot": "apps/microservices/booking-v2/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -11,12 +11,12 @@
       "options": {
         "target": "node",
         "compiler": "tsc",
-        "outputPath": "dist/apps/microservices/booking",
-        "main": "apps/microservices/booking/src/main.ts",
-        "tsConfig": "apps/microservices/booking/tsconfig.app.json",
-        "assets": ["apps/microservices/booking/src/assets"],
+        "outputPath": "dist/apps/microservices/booking-v2",
+        "main": "apps/microservices/booking-v2/src/main.ts",
+        "tsConfig": "apps/microservices/booking-v2/tsconfig.app.json",
+        "assets": ["apps/microservices/booking-v2/src/assets"],
         "isolatedConfig": true,
-        "webpackConfig": "apps/microservices/booking/webpack.config.js"
+        "webpackConfig": "apps/microservices/booking-v2/webpack.config.js"
       },
       "configurations": {
         "development": {},
@@ -27,15 +27,16 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "booking:build"
+        "buildTarget": "booking-v2:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "booking:build:development",
-          "runtimeArgs": ["--require", "dotenv"]
+          "buildTarget": "booking-v2:build:development",
+          "runtimeArgs": ["-r", "dotenv/config"],
+          "args": ["dotenv_config_path=./apps/microservices/booking-v2/.env", "dotenv_config_debug=true"]
         },
         "production": {
-          "buildTarget": "booking:build:production"
+          "buildTarget": "booking-v2:build:production"
         }
       }
     },
@@ -43,14 +44,14 @@
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/microservices/booking/**/*.ts"]
+        "lintFilePatterns": ["apps/microservices/booking-v2/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/microservices/booking/jest.config.ts",
+        "jestConfig": "apps/microservices/booking-v2/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {

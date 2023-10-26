@@ -4,21 +4,31 @@
  */
 
 import express from 'express';
-import * as path from 'path';
+import amqplib, { Channel, Connection } from 'amqplib';
+import { env } from './utils/enviroment';
 
-import * as amqp from 'amqplib';
+import { ApiRouterV1 } from './v1/router';
 
 const app = express();
 
+let channel: Channel;
+let connection: Connection;
 
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
+app.use(express.json());
 
-app.get('/api', (req, res) => {
-  res.send({ message: 'Welcome to events!' });
-});
+async function main() {
+    connection = await amqplib.connect(`amqp://${env.BROKER.URL}:${env.BROKER.PORT}`);
+    channel = await connection.createChannel();
+    channel.assertQueue(env.BROKER.QUEUE, { durable: false });
+    const server = app.listen(env.PORT, () => {
+        console.log(`Listening at http://localhost:${env.PORT}/api`);
+    });
+    app.use((req, _, next) => {
+        req.channel = channel;
+        next();
+    })
+    server.on('error', console.error);
+    app.use('/api/v1/events', ApiRouterV1);
+}
 
-const port = process.env.PORT || 3333;
-const server = app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}/api`);
-});
-server.on('error', console.error);
+main()

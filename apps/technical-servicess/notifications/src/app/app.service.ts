@@ -6,13 +6,5 @@ MailerService
 export class AppService {
   constructor(private readonly mailerService: MailerService) {}
 
-  sendMail(): void {
-    this.mailerService.sendMail({
-      to: 'felipealvarezb1@gmail.com',
-      from: 'pepe2136@gmail.com',
-      subject: 'Testing MailerModule',
-      text: 'welcome',
-      html: '<p>You are amazing</p>'
-    })
-  }
+  sendMail(): void {}
 }

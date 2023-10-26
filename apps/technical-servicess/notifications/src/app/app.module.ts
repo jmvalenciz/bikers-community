@@ -5,16 +5,7 @@ import { MailerModule } from '@nestjs-modules/mailer';
 
 
 @Module({
-  imports: [MailerModule.forRoot({
-    transport: {
-      host: 'smtp.gmail.com',
-      auth:{
-        user: 'pepe2136@gmail.com',
-        pass: 'uncharted3'
-      },
-    },
-  }),
-],
+  imports: [],
   controllers: [AppController],
   providers: [AppService],
 })

@@ -3,6 +3,7 @@ import * as Validator from './validatorEvent';
 import { Event, validate } from '@bikers-community/models';
 import { EventController } from './controllerEvent';
 import { Types } from 'mongoose';
+
 const router = Router();
 
 router
@@ -20,7 +21,7 @@ router
         );
         res.status(200).json(event);
     })
-    .delete(async (req, res) => {
+    .delete(validate(Validator.getEventValidator), async (req, res) => {
         EventController.deleteEventById(
             req.params.eventId as unknown as Types.ObjectId
         );

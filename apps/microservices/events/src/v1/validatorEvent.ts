@@ -18,7 +18,7 @@ export const createEventValidator = z.object({
     body: NewEvent
 });
 
-export const updateEvent = z.object({
+export const updateEventValidator = z.object({
     body: UpdateEvent
 });
 

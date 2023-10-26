@@ -27,8 +27,7 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "booking:build",
-        "runtimeArgs": ["-r dotenv/config"]
+        "buildTarget": "booking:build"
       },
       "configurations": {
         "development": {
@@ -40,7 +39,7 @@
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["apps/microservices/booking/**/*.ts"]

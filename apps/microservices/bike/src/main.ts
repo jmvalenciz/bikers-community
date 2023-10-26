@@ -1,22 +1,29 @@
-/**
- * This is not a production server yet!
- * This is only a minimal backend to get started.
- */
+import express from 'express';
+import amqplib, { Channel, Connection }  from 'amqplib';
+import { env } from './utils/environment';
 
-import { Logger } from '@nestjs/common';
-import { NestFactory } from '@nestjs/core';
+import { ApiRouterV1 } from './v1/router';
 
-import { AppModule } from './app/app.module';
+const app = express();
 
-async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  const globalPrefix = 'api';
-  app.setGlobalPrefix(globalPrefix);
-  const port = process.env.PORT || 3000;
-  await app.listen(port);
-  Logger.log(
-    `🚀 Application is running on: http://localhost:${port}/${globalPrefix}`
-  );
+let channel: Channel;
+let connection: Connection;
+
+app.use(express.json());
+
+async function main(){
+  connection = await amqplib.connect(`amqp://${env.BROKER.URL}:${env.BROKER.PORT}`);
+  channel = await connection.createChannel();
+  channel.assertQueue(env.BROKER.QUEUE, {durable: false});
+  const server = app.listen(env.PORT, () => {
+    console.log(`Listening at http://localhost:${env.PORT}/api`);
+  });
+  app.use((req, _, next)=>{
+    req.channel = channel;
+    next();
+  })
+  server.on('error', console.error);
+  app.use('/api/v1', ApiRouterV1);
 }
 
-bootstrap();
+main()

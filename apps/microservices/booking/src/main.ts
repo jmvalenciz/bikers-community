@@ -1,32 +1,31 @@
-import { Logger } from '@nestjs/common';
-import { NestFactory } from '@nestjs/core';
-import { Transport } from '@nestjs/microservices';
-import { env } from './environment';
+import express from 'express';
+import amqplib, { Channel, Connection } from 'amqplib';
+import { env } from './utils/environment';
 
-import { AppModule } from './app/app.module';
-import { connect as MongoConnect } from 'mongoose';
+import { ApiRouterV1 } from './v1/router';
 
-async function bootstrap() {
-  const [app] = await Promise.all([
-    NestFactory.create(AppModule),
-    MongoConnect('mongodb://localhost:27017/test'),
-  ]);
-  app.connectMicroservice({
-      transport: Transport.RMQ,
-      options: {
-        urls: [`amqp://${env.BROKER.URL}:${env.BROKER.PORT}`],
-        queue: env.BROKER.QUEUE,
-        queueOptions: {
-          durable: false
-        },
-      }
-    })
-  const port = env.PORT || 3000;
-  await app.startAllMicroservices()
-  await app.listen(port);
-  Logger.log(
-    `🚀 Application is running on: http://localhost:${port}`
+const app = express();
+
+let channel: Channel;
+let connection: Connection;
+
+app.use(express.json());
+
+async function main() {
+  connection = await amqplib.connect(
+    `amqp://${env.BROKER.URL}:${env.BROKER.PORT}`
   );
+  channel = await connection.createChannel();
+  channel.assertQueue(env.BROKER.QUEUE, { durable: false });
+  const server = app.listen(env.PORT, () => {
+    console.log(`Listening at http://localhost:${env.PORT}/api`);
+  });
+  app.use((req, _, next) => {
+    req.channel = channel;
+    next();
+  });
+  server.on('error', console.error);
+  app.use('/api/v1', ApiRouterV1);
 }
 
-bootstrap();
+main();

@@ -7,7 +7,6 @@ export const Booking = z.object({
   bookingId: ObjectIdSchema,
   bikeId: ObjectIdSchema,
   userId: ObjectIdSchema,
-  adminId: ObjectIdSchema,
   createdAt: z.date(),
   status: z.enum(BOOKING_STATUS),
   finishedAt: z.date().optional()
@@ -15,7 +14,8 @@ export const Booking = z.object({
 export const NewBooking = Booking.omit({
   bookingId: true,
   finishedAt: true,
-  createdAt: true
+  createdAt: true,
+  status: true
 });
 export type Booking = z.infer<typeof Booking>;
 export type NewBooking = z.infer<typeof NewBooking>;

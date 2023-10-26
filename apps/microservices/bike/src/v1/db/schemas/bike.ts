@@ -1,11 +1,7 @@
-import { Booking } from '@bikers-community/models';
+import { Bike } from '@bikers-community/models';
 import { model, Schema } from 'mongoose';
 
-const BookingSchema = new Schema<Booking>({
-  status: {
-    typeKey: String,
-    default: 'ACTIVE',
-  }
+const BikeSchema = new Schema<Bike>({
 }, {
   minimize: false,
   versionKey: false,
@@ -21,7 +17,8 @@ const BookingSchema = new Schema<Booking>({
   },
   timestamps:{
     createdAt: true,
+    updatedAt: true
   }
 });
 
-export const BookingDB = model<Booking>('booking', BookingSchema);
+export const BikeDB = model<Bike>('bike', BikeSchema);

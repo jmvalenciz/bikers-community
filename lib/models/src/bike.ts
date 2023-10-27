@@ -5,7 +5,7 @@ import { HexColor } from './general/hex_color';
 export const BIKE_STATUS = [ 'AVAILABLE', 'BOOKED', 'UNAVAILABLE'] as const;
 
 export const Bike = z.object({
-  bikeId: ObjectIdSchema,
+  _id: ObjectIdSchema,
   createdByAdminId: ObjectIdSchema,
   updatedByAdminId: ObjectIdSchema,
   updatedAt: z.date(),
@@ -16,14 +16,16 @@ export const Bike = z.object({
   description: z.string().min(3).max(200)
 });
 export const NewBike = Bike.omit({
-  bikeId: true,
+  _id: true,
+  createdAt: true,
   updatedByAdminId: true,
   updatedAt: true,
   status: true
 });
 export const UpdateBike = Bike.omit({
-  bikeId: true,
+  _id: true,
   createdByAdminId: true,
+  updatedAt: true,
   createdAt: true,
   status: true
 });

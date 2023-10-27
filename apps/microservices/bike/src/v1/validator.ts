@@ -1,22 +1,22 @@
-import { BIKE_STATUS, NewBike, ObjectIdSchema, UpdateBike } from '@bikers-community/models';
+import { NewBike, ObjectIdSchema, UpdateBike } from '@bikers-community/models';
 import { z } from 'zod';
 
 export const getBikeValidator = z.object({
   params: z.object({
-    bikeId: ObjectIdSchema
-  })
+    bikeId: ObjectIdSchema,
+  }),
 });
 
-export const createBikeValidator = z.object({
-  body: NewBike
+export const newBikeValidator = z.object({
+  body: NewBike,
 });
 
-export const updateBike = z.object({
-  body: UpdateBike
+export const updateBikeValidator = z.object({
+  body: UpdateBike,
+  params: z.object({
+    bikeId: ObjectIdSchema,
+  }),
 });
 
-export const updateBikeStatusValidator = z.object({
-  query: z.object({
-    status: z.enum(BIKE_STATUS)
-  })
+export const getBikeListValidator = z.object({
 });

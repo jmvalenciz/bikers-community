@@ -11,7 +11,7 @@ ENV DB_PORT 27017
 
 WORKDIR /app
 
-COPY ./dist/apps/microservices/booking .
+COPY ./dist/apps/microservices/bike .
 
 RUN npm install
 

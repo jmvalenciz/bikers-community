@@ -6,22 +6,23 @@ export class BookingDataStore {
   static async getBookingById(
     bookingId: Types.ObjectId
   ): Promise<Booking | null> {
-    return await BookingDB.findOne({ bookingId }).lean();
+    return await BookingDB.findOne({ _id: bookingId }).lean();
+  }
+
+  static async getBookingByBikeId(
+    bikeId: Types.ObjectId
+  ): Promise<Booking | null> {
+    return await BookingDB.findOne({ bikeId }).lean();
   }
 
   static async newBooking(newBooking: NewBooking): Promise<Booking> {
     const booking: HydratedDocument<Booking> = new BookingDB({
       ...newBooking,
       status: 'ACTIVE',
+      createdAt: new Date(),
     });
     await booking.save();
     return booking;
-  }
-
-  static async deleteBookingById(
-    bookingId: Types.ObjectId
-  ): Promise<Booking | null> {
-    return await BookingDB.findOneAndDelete({ bookingId }).lean();
   }
 
   static async getBookingListByUserId(
@@ -30,15 +31,11 @@ export class BookingDataStore {
     return await BookingDB.find({ userId }).lean();
   }
 
-  static async isBikeAlreadyBooked(bookingId: Types.ObjectId) {
-    return await BookingDB.exists({ bookingId }).lean();
-  }
-
   static async finishBooking(
     bookingId: Types.ObjectId
   ): Promise<Booking | null> {
     return await BookingDB.findOneAndUpdate(
-      { bookingId },
+      { _id: bookingId },
       { $set: { status: 'FINISHED' } },
       { new: true }
     ).lean();

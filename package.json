@@ -2,7 +2,10 @@
   "name": "@bikers-community/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build-booking": "nx build booking && docker build -f apps/microservices/booking/Dockerfile -t bikers-community/booking .",
+    "build-bike": "nx build bike && docker build -f apps/microservices/bike/Dockerfile -t bikers-community/bike ."
+  },
   "private": true,
   "dependencies": {
     "@nestjs/common": "^10.0.2",

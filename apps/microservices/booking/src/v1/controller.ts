@@ -9,7 +9,10 @@ export class BookingController {
     newBooking: NewBooking,
     channel: Channel
   ): Promise<Booking> {
-    if (await BookingDataStore.isBikeAlreadyBooked(newBooking.bikeId)) {
+    const oldBooking = await BookingDataStore.getBookingByBikeId(
+      newBooking.bikeId
+    );
+    if (oldBooking != null) {
       throw Error('Bike is already booked');
     }
     const bike = await BookingDataStore.newBooking(newBooking);

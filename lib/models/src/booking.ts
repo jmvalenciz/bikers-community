@@ -4,7 +4,7 @@ import { ObjectIdSchema } from './general/object_id';
 export const BOOKING_STATUS = ['ACTIVE', 'FINISHED'] as const;
 
 export const Booking = z.object({
-  bookingId: ObjectIdSchema,
+  _id: ObjectIdSchema,
   bikeId: ObjectIdSchema,
   userId: ObjectIdSchema,
   createdAt: z.date(),
@@ -12,7 +12,7 @@ export const Booking = z.object({
   finishedAt: z.date().optional()
 });
 export const NewBooking = Booking.omit({
-  bookingId: true,
+  _id: true,
   finishedAt: true,
   createdAt: true,
   status: true

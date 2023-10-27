@@ -16,7 +16,8 @@
         "tsConfig": "apps/microservices/booking/tsconfig.app.json",
         "assets": ["apps/microservices/booking/src/assets"],
         "isolatedConfig": true,
-        "webpackConfig": "apps/microservices/booking/webpack.config.js"
+        "webpackConfig": "apps/microservices/booking/webpack.config.js",
+        "generatePackageJson": true
       },
       "configurations": {
         "development": {},
@@ -32,7 +33,11 @@
       "configurations": {
         "development": {
           "buildTarget": "booking:build:development",
-          "runtimeArgs": ["--require", "dotenv"]
+          "runtimeArgs": ["-r", "dotenv/config"],
+          "args": [
+            "dotenv_config_path=./apps/microservices/booking/.env",
+            "dotenv_config_debug=true"
+          ]
         },
         "production": {
           "buildTarget": "booking:build:production"

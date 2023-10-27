@@ -7,17 +7,8 @@ export class BikeAdapter {
   constructor(channel: Channel){
     this.channel = channel;
   }
-
-  async getBike(bikeId: Types.ObjectId, replyTo: string): Promise<boolean> {
-    const data = {
-      action: 'GET_BIKE',
-      body: {
-        bikeId
-      }
-    }
-    return this.channel.sendToQueue(this.queue, Buffer.from(JSON.stringify(data)), {replyTo});
-  }
   async freeBike(bikeId: Types.ObjectId): Promise<boolean> {
+    await this.channel.assertQueue(this.queue, { durable: false });
     const data = {
       action: 'SET_BIKE_STATUS',
       body: {
@@ -28,6 +19,7 @@ export class BikeAdapter {
     return this.channel.sendToQueue(this.queue, Buffer.from(JSON.stringify(data)));
   }
   async bookBike(bikeId: Types.ObjectId): Promise<boolean> {
+    await this.channel.assertQueue(this.queue, { durable: false });
     const data = {
       action: 'SET_BIKE_STATUS',
       body: {
@@ -35,6 +27,6 @@ export class BikeAdapter {
         newStatus: "BOOKED"
       }
     }
-    return this.channel.sendToQueue(this.queue, Buffer.from(JSON.stringify(data)));
+    return this.channel.sendToQueue(this.queue, Buffer.from(JSON.stringify(data)), {contentEncoding:"base64"});
   }
 }

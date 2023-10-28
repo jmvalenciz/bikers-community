@@ -1,32 +1,21 @@
 {
   "run": {
-    "command": "nx build events",
-    "startTime": "2023-10-28T02:05:36.889Z",
-    "endTime": "2023-10-28T02:05:36.932Z",
+    "command": "nx run notification:serve:development",
+    "startTime": "2023-10-28T05:57:30.700Z",
+    "endTime": "2023-10-28T05:57:32.036Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "models:build",
-      "target": "build",
-      "projectName": "models",
-      "hash": "16516526375854200595",
-      "startTime": "2023-10-28T02:05:36.895Z",
-      "endTime": "2023-10-28T02:05:36.922Z",
+      "taskId": "notification:serve:development",
+      "target": "serve",
+      "projectName": "notification",
+      "hash": "3565750049301799475",
+      "startTime": "2023-10-28T05:57:30.705Z",
+      "endTime": "2023-10-28T05:57:32.036Z",
       "params": "",
-      "cacheStatus": "local-cache-hit",
-      "status": 0
-    },
-    {
-      "taskId": "events:build:production",
-      "target": "build",
-      "projectName": "events",
-      "hash": "2347730845459964030",
-      "startTime": "2023-10-28T02:05:36.926Z",
-      "endTime": "2023-10-28T02:05:36.929Z",
-      "params": "",
-      "cacheStatus": "local-cache-hit",
-      "status": 0
+      "cacheStatus": "cache-miss",
+      "status": 1
     }
   ]
 }

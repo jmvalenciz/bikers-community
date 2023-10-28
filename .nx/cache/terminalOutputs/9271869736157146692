@@ -1,0 +1,7 @@
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m[32mmain[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve '/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/apps/technical-servicess/notification/src/main.ts' in '/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/apps/technical-servicess/notification'[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m (6c42edfc49085ac6)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m

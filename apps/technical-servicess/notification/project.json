@@ -19,7 +19,10 @@
         "webpackConfig": "apps/technical-servicess/notification/webpack.config.js"
       },
       "configurations": {
-        "development": {},
+        "development": {
+          "buildTarget": "events:build:development",
+          "runtimeArgs": ["-r", "dotenv/config"]
+        },
         "production": {}
       }
     },

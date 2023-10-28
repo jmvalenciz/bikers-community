@@ -120,20 +120,88 @@
         "hash": "1880664178033616490"
       },
       {
+        "file": ".nx/cache/16516526375854200595/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nx/cache/16516526375854200595/source",
+        "hash": "9286680404621878392"
+      },
+      {
+        "file": ".nx/cache/16516526375854200595/terminalOutput",
+        "hash": "17798873409773105731"
+      },
+      {
+        "file": ".nx/cache/16516526375854200595.commit",
+        "hash": "4664556114322093609"
+      },
+      {
+        "file": ".nx/cache/2347730845459964030/code",
+        "hash": "1838281907459330133"
+      },
+      {
+        "file": ".nx/cache/2347730845459964030/source",
+        "hash": "9286680404621878392"
+      },
+      {
+        "file": ".nx/cache/2347730845459964030/terminalOutput",
+        "hash": "3232159794103386004"
+      },
+      {
+        "file": ".nx/cache/2347730845459964030.commit",
+        "hash": "4664556114322093609"
+      },
+      {
         "file": ".nx/cache/d/daemon.log",
-        "hash": "14052339988924312102"
+        "hash": "13070709602386337479"
       },
       {
         "file": ".nx/cache/d/server-process.json",
-        "hash": "4007212836366522270"
+        "hash": "12941192334446452478"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "11975791656348148225"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "15334862011100801956"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "6951585961656737628"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "11543156053499626243"
       },
       {
         "file": ".nx/cache/run.json",
-        "hash": "9589429299170263048"
+        "hash": "2277840345408294017"
       },
       {
         "file": ".nx/cache/terminalOutputs/16516526375854200595",
         "hash": "17798873409773105731"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/2347730845459964030",
+        "hash": "3232159794103386004"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/3565750049301799475",
+        "hash": "1422528268715164898"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/8460181973466581156",
+        "hash": "5175752837419457143"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/9520844889354038460",
+        "hash": "1218204748877025669"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/9527421004430011156",
+        "hash": "3244421341483603138"
       },
       {
         "file": ".prettierignore",
@@ -168,10 +236,6 @@
         "hash": "10932355921787199880"
       },
       {
-        "file": "package-lock.json",
-        "hash": "13470288241938684438"
-      },
-      {
         "file": "package.json",
         "hash": "352608982646386030"
       },
@@ -184,313 +248,223 @@
         "hash": "14396677770558095642"
       },
       {
-        "file": ".nx/cache/lockfile.hash",
-        "hash": "15334862011100801956"
+        "file": ".nx/cache/terminalOutputs/9271869736157146692",
+        "hash": "1422528268715164898"
       },
       {
-        "file": ".nx/cache/parsed-lock-file.json",
-        "hash": "6951585961656737628"
-      },
-      {
-        "file": ".nx/cache/file-map.json",
-        "hash": "6262022907665078508"
-      },
-      {
-        "file": ".nx/cache/project-graph.json",
-        "hash": "11815069820026703676"
-      },
-      {
-        "file": ".nx/cache/16516526375854200595.commit",
-        "hash": "4664556114322093609"
-      },
-      {
-        "file": ".nx/cache/16516526375854200595/code",
-        "hash": "1838281907459330133"
-      },
-      {
-        "file": ".nx/cache/16516526375854200595/source",
-        "hash": "9286680404621878392"
-      },
-      {
-        "file": ".nx/cache/16516526375854200595/terminalOutput",
-        "hash": "17798873409773105731"
-      },
-      {
-        "file": ".nx/cache/terminalOutputs/2347730845459964030",
-        "hash": "3232159794103386004"
-      },
-      {
-        "file": ".nx/cache/2347730845459964030/source",
-        "hash": "9286680404621878392"
-      },
-      {
-        "file": ".nx/cache/2347730845459964030/terminalOutput",
-        "hash": "3232159794103386004"
-      },
-      {
-        "file": ".nx/cache/2347730845459964030.commit",
-        "hash": "4664556114322093609"
-      },
-      {
-        "file": ".nx/cache/2347730845459964030/code",
-        "hash": "1838281907459330133"
-      },
-      {
-        "file": ".nx/cache/terminalOutputs/8460181973466581156",
-        "hash": "5175752837419457143"
+        "file": ".nx/cache/terminalOutputs/13099026983999302720",
+        "hash": "5152887217817672819"
       }
     ],
     "projectFileMap": {
-      "notification": [
+      "models": [
         {
-          "file": "apps/technical-servicess/notification/.eslintrc.json",
-          "hash": "9703569748258640057"
+          "file": "lib/models/.eslintrc.json",
+          "hash": "10905178498824427073"
         },
         {
-          "file": "apps/technical-servicess/notification/config/serviceAccountKey.json",
-          "hash": "11948503848388739537"
+          "file": "lib/models/README.md",
+          "hash": "3868118482007639811"
         },
         {
-          "file": "apps/technical-servicess/notification/jest.config.ts",
-          "hash": "4964226851140487593"
+          "file": "lib/models/package.json",
+          "hash": "2920653077150419287"
         },
         {
-          "file": "apps/technical-servicess/notification/project.json",
-          "hash": "4202804458992574019"
+          "file": "lib/models/project.json",
+          "hash": "4537207318677740569"
         },
         {
-          "file": "apps/technical-servicess/notification/src/main.ts",
-          "hash": "111030787165425786",
-          "deps": [
-            "npm:amqplib",
-            "npm:firebase-admin",
-            "npm:path/to/your/serviceAccountKey.json"
-          ]
-        },
-        {
-          "file": "apps/technical-servicess/notification/tsconfig.app.json",
-          "hash": "17678014141582272727"
-        },
-        {
-          "file": "apps/technical-servicess/notification/tsconfig.json",
-          "hash": "12480499342767391486"
-        },
-        {
-          "file": "apps/technical-servicess/notification/tsconfig.spec.json",
-          "hash": "9110660443763673899"
-        },
-        {
-          "file": "apps/technical-servicess/notification/webpack.config.js",
-          "hash": "10619490397189790225",
-          "deps": [
-            "npm:@nx/webpack"
-          ]
-        }
-      ],
-      "admin-web-e2e": [
-        {
-          "file": "apps/web/admin-web-e2e/.eslintrc.json",
-          "hash": "7973176717762084071"
-        },
-        {
-          "file": "apps/web/admin-web-e2e/cypress.config.ts",
-          "hash": "3631011454240625899",
-          "deps": [
-            "npm:cypress",
-            "npm:@nx/cypress"
-          ]
-        },
-        {
-          "file": "apps/web/admin-web-e2e/project.json",
-          "hash": "8749006023115563292"
-        },
-        {
-          "file": "apps/web/admin-web-e2e/src/e2e/app.cy.ts",
-          "hash": "7458908987440253163"
-        },
-        {
-          "file": "apps/web/admin-web-e2e/src/fixtures/example.json",
-          "hash": "11614668686582597233"
-        },
-        {
-          "file": "apps/web/admin-web-e2e/src/support/app.po.ts",
-          "hash": "11157016311132186162"
-        },
-        {
-          "file": "apps/web/admin-web-e2e/src/support/commands.ts",
-          "hash": "7314691991044890572"
-        },
-        {
-          "file": "apps/web/admin-web-e2e/src/support/e2e.ts",
-          "hash": "3666078656922506009"
-        },
-        {
-          "file": "apps/web/admin-web-e2e/tsconfig.json",
-          "hash": "7790126871106100160"
-        }
-      ],
-      "bike": [
-        {
-          "file": "apps/microservices/bike/.dockerignore",
-          "hash": "7663861978715868291"
-        },
-        {
-          "file": "apps/microservices/bike/.env",
-          "hash": "17627447089394665814"
-        },
-        {
-          "file": "apps/microservices/bike/.eslintrc.json",
-          "hash": "9703569748258640057"
-        },
-        {
-          "file": "apps/microservices/bike/Dockerfile",
-          "hash": "1275581697515999111"
-        },
-        {
-          "file": "apps/microservices/bike/jest.config.ts",
-          "hash": "4388821333610291460"
-        },
-        {
-          "file": "apps/microservices/bike/project.json",
-          "hash": "8433505961058248257"
-        },
-        {
-          "file": "apps/microservices/bike/src/00_deployment.yml",
-          "hash": "10214945138186074046"
-        },
-        {
-          "file": "apps/microservices/bike/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/microservices/bike/src/index.d.ts",
-          "hash": "12102954850954615836",
-          "deps": [
-            "npm:amqplib"
-          ]
-        },
-        {
-          "file": "apps/microservices/bike/src/main.ts",
-          "hash": "1369161642028218495",
-          "deps": [
-            "npm:express",
-            "npm:morgan",
-            "npm:amqplib",
-            "npm:mongoose"
-          ]
-        },
-        {
-          "file": "apps/microservices/bike/src/utils/environment.ts",
-          "hash": "2998200259853185670",
+          "file": "lib/models/src/bike.ts",
+          "hash": "4288982754604262760",
           "deps": [
             "npm:zod"
           ]
         },
         {
-          "file": "apps/microservices/bike/src/v1/controller.ts",
-          "hash": "3834102874369808828",
+          "file": "lib/models/src/booking.ts",
+          "hash": "14201730767201851743",
           "deps": [
-            "npm:mongoose",
-            "models"
-          ]
-        },
-        {
-          "file": "apps/microservices/bike/src/v1/db/datastore.ts",
-          "hash": "11481363794644726567",
-          "deps": [
-            "npm:mongoose",
-            "models"
-          ]
-        },
-        {
-          "file": "apps/microservices/bike/src/v1/db/schemas/bike.ts",
-          "hash": "14521324801982850337",
-          "deps": [
-            "models",
-            "npm:mongoose"
-          ]
-        },
-        {
-          "file": "apps/microservices/bike/src/v1/request.http",
-          "hash": "3545718927178658973"
-        },
-        {
-          "file": "apps/microservices/bike/src/v1/router.ts",
-          "hash": "18308244137443331566",
-          "deps": [
-            "npm:express",
-            "models",
-            "npm:mongoose"
-          ]
-        },
-        {
-          "file": "apps/microservices/bike/src/v1/validator.ts",
-          "hash": "9559929026039314592",
-          "deps": [
-            "models",
             "npm:zod"
           ]
         },
         {
-          "file": "apps/microservices/bike/tsconfig.app.json",
-          "hash": "17678014141582272727"
-        },
-        {
-          "file": "apps/microservices/bike/tsconfig.json",
-          "hash": "14785519187273610601"
-        },
-        {
-          "file": "apps/microservices/bike/tsconfig.spec.json",
-          "hash": "9110660443763673899"
-        },
-        {
-          "file": "apps/microservices/bike/webpack.config.js",
-          "hash": "10619490397189790225",
+          "file": "lib/models/src/event.ts",
+          "hash": "10631713969360762470",
           "deps": [
-            "npm:@nx/webpack"
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "lib/models/src/general/hex_color.ts",
+          "hash": "4262007157752104178",
+          "deps": [
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "lib/models/src/general/object_id.ts",
+          "hash": "15232215396150839515",
+          "deps": [
+            "npm:mongoose",
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "lib/models/src/index.ts",
+          "hash": "9426004631862079802",
+          "deps": [
+            "npm:zod",
+            "npm:express"
+          ]
+        },
+        {
+          "file": "lib/models/src/routes.ts",
+          "hash": "14568841010205756316",
+          "deps": [
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "lib/models/src/user.ts",
+          "hash": "18351091525857951748",
+          "deps": [
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "lib/models/tsconfig.json",
+          "hash": "634795086719220447"
+        },
+        {
+          "file": "lib/models/tsconfig.lib.json",
+          "hash": "874530265290128605"
+        },
+        {
+          "file": "lib/models/vite.config.ts",
+          "hash": "4838207598615303628",
+          "deps": [
+            "npm:vite",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
           ]
         }
       ],
-      "user-web-e2e": [
+      "adapters": [
         {
-          "file": "apps/web/user-web-e2e/.eslintrc.json",
-          "hash": "7973176717762084071"
+          "file": "lib/adapters/.eslintrc.json",
+          "hash": "10905178498824427073"
         },
         {
-          "file": "apps/web/user-web-e2e/cypress.config.ts",
-          "hash": "3631011454240625899",
+          "file": "lib/adapters/README.md",
+          "hash": "12718848711530566959"
+        },
+        {
+          "file": "lib/adapters/package.json",
+          "hash": "17296795029838465924"
+        },
+        {
+          "file": "lib/adapters/project.json",
+          "hash": "1712270775720150516"
+        },
+        {
+          "file": "lib/adapters/src/bike_adapter.ts",
+          "hash": "4323425780087390878",
           "deps": [
-            "npm:cypress",
-            "npm:@nx/cypress"
+            "npm:amqplib",
+            "npm:mongoose"
           ]
         },
         {
-          "file": "apps/web/user-web-e2e/project.json",
-          "hash": "1052701447953074599"
+          "file": "lib/adapters/src/index.ts",
+          "hash": "14357235693091610735"
         },
         {
-          "file": "apps/web/user-web-e2e/src/e2e/app.cy.ts",
-          "hash": "568355851414172805"
+          "file": "lib/adapters/tsconfig.json",
+          "hash": "634795086719220447"
         },
         {
-          "file": "apps/web/user-web-e2e/src/fixtures/example.json",
-          "hash": "11614668686582597233"
+          "file": "lib/adapters/tsconfig.lib.json",
+          "hash": "874530265290128605"
         },
         {
-          "file": "apps/web/user-web-e2e/src/support/app.po.ts",
-          "hash": "11157016311132186162"
+          "file": "lib/adapters/vite.config.ts",
+          "hash": "1369155669480996320",
+          "deps": [
+            "npm:vite",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "ui": [
+        {
+          "file": "lib/ui/.babelrc",
+          "hash": "2946678488919325452"
         },
         {
-          "file": "apps/web/user-web-e2e/src/support/commands.ts",
-          "hash": "7314691991044890572"
+          "file": "lib/ui/.eslintrc.json",
+          "hash": "11012487992710232822"
         },
         {
-          "file": "apps/web/user-web-e2e/src/support/e2e.ts",
-          "hash": "3666078656922506009"
+          "file": "lib/ui/README.md",
+          "hash": "7076417556183857472"
         },
         {
-          "file": "apps/web/user-web-e2e/tsconfig.json",
-          "hash": "7790126871106100160"
+          "file": "lib/ui/jest.config.ts",
+          "hash": "1743408380013970671"
+        },
+        {
+          "file": "lib/ui/package.json",
+          "hash": "1635726171062184900"
+        },
+        {
+          "file": "lib/ui/project.json",
+          "hash": "6910783615747286093"
+        },
+        {
+          "file": "lib/ui/src/index.ts",
+          "hash": "10699556779931692575"
+        },
+        {
+          "file": "lib/ui/src/lib/ui-lib.module.scss",
+          "hash": "125145030238681982"
+        },
+        {
+          "file": "lib/ui/src/lib/ui-lib.spec.tsx",
+          "hash": "3862417808855154341",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "lib/ui/src/lib/ui-lib.tsx",
+          "hash": "11986229267033160704"
+        },
+        {
+          "file": "lib/ui/tsconfig.json",
+          "hash": "10374583890390798648"
+        },
+        {
+          "file": "lib/ui/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "lib/ui/tsconfig.spec.json",
+          "hash": "6514620907549802163"
+        },
+        {
+          "file": "lib/ui/vite.config.ts",
+          "hash": "2452520119564333884",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
         }
       ],
       "booking": [
@@ -617,287 +591,122 @@
           ]
         }
       ],
-      "adapters": [
+      "bike": [
         {
-          "file": "lib/adapters/.eslintrc.json",
-          "hash": "10905178498824427073"
+          "file": "apps/microservices/bike/.dockerignore",
+          "hash": "7663861978715868291"
         },
         {
-          "file": "lib/adapters/README.md",
-          "hash": "12718848711530566959"
+          "file": "apps/microservices/bike/.env",
+          "hash": "17627447089394665814"
         },
         {
-          "file": "lib/adapters/package.json",
-          "hash": "17296795029838465924"
+          "file": "apps/microservices/bike/.eslintrc.json",
+          "hash": "9703569748258640057"
         },
         {
-          "file": "lib/adapters/project.json",
-          "hash": "1712270775720150516"
+          "file": "apps/microservices/bike/Dockerfile",
+          "hash": "1275581697515999111"
         },
         {
-          "file": "lib/adapters/src/bike_adapter.ts",
-          "hash": "4323425780087390878",
+          "file": "apps/microservices/bike/jest.config.ts",
+          "hash": "4388821333610291460"
+        },
+        {
+          "file": "apps/microservices/bike/project.json",
+          "hash": "8433505961058248257"
+        },
+        {
+          "file": "apps/microservices/bike/src/00_deployment.yml",
+          "hash": "10214945138186074046"
+        },
+        {
+          "file": "apps/microservices/bike/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/microservices/bike/src/index.d.ts",
+          "hash": "12102954850954615836",
           "deps": [
+            "npm:amqplib"
+          ]
+        },
+        {
+          "file": "apps/microservices/bike/src/main.ts",
+          "hash": "1369161642028218495",
+          "deps": [
+            "npm:express",
+            "npm:morgan",
             "npm:amqplib",
             "npm:mongoose"
           ]
         },
         {
-          "file": "lib/adapters/src/index.ts",
-          "hash": "14357235693091610735"
-        },
-        {
-          "file": "lib/adapters/tsconfig.json",
-          "hash": "634795086719220447"
-        },
-        {
-          "file": "lib/adapters/tsconfig.lib.json",
-          "hash": "874530265290128605"
-        },
-        {
-          "file": "lib/adapters/vite.config.ts",
-          "hash": "1369155669480996320",
+          "file": "apps/microservices/bike/src/utils/environment.ts",
+          "hash": "2998200259853185670",
           "deps": [
-            "npm:vite",
-            "npm:vite-plugin-dts",
-            "npm:path",
-            "npm:@nx/vite"
-          ]
-        }
-      ],
-      "user-web": [
-        {
-          "file": "apps/web/user-web/.eslintrc.json",
-          "hash": "15946965712701950674"
-        },
-        {
-          "file": "apps/web/user-web/index.html",
-          "hash": "7031539546807798060"
-        },
-        {
-          "file": "apps/web/user-web/project.json",
-          "hash": "5615702225976585121"
-        },
-        {
-          "file": "apps/web/user-web/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/web/user-web/src/app/app.module.scss",
-          "hash": "8887387885984320532"
-        },
-        {
-          "file": "apps/web/user-web/src/app/app.spec.tsx",
-          "hash": "8396781271001002094",
-          "deps": [
-            "npm:@testing-library/react",
-            "npm:react-router-dom"
+            "npm:zod"
           ]
         },
         {
-          "file": "apps/web/user-web/src/app/app.tsx",
-          "hash": "16728322111794760797",
+          "file": "apps/microservices/bike/src/v1/controller.ts",
+          "hash": "3834102874369808828",
           "deps": [
-            "npm:react-router-dom"
+            "npm:mongoose",
+            "models"
           ]
         },
         {
-          "file": "apps/web/user-web/src/app/nx-welcome.tsx",
-          "hash": "4389251527819925043"
-        },
-        {
-          "file": "apps/web/user-web/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/web/user-web/src/main.tsx",
-          "hash": "763379880219152615",
+          "file": "apps/microservices/bike/src/v1/db/datastore.ts",
+          "hash": "11481363794644726567",
           "deps": [
-            "npm:react",
-            "npm:react-dom",
-            "npm:react-router-dom"
+            "npm:mongoose",
+            "models"
           ]
         },
         {
-          "file": "apps/web/user-web/src/styles.scss",
-          "hash": "5195668842064076916"
-        },
-        {
-          "file": "apps/web/user-web/tsconfig.app.json",
-          "hash": "6208278882108140805"
-        },
-        {
-          "file": "apps/web/user-web/tsconfig.json",
-          "hash": "7240681206697848857"
-        },
-        {
-          "file": "apps/web/user-web/tsconfig.spec.json",
-          "hash": "17874504027954657085"
-        },
-        {
-          "file": "apps/web/user-web/vite.config.ts",
-          "hash": "9055246655674836220",
+          "file": "apps/microservices/bike/src/v1/db/schemas/bike.ts",
+          "hash": "14521324801982850337",
           "deps": [
-            "npm:vite",
-            "npm:@vitejs/plugin-react",
-            "npm:@nx/vite"
-          ]
-        }
-      ],
-      "map": [
-        {
-          "file": "apps/microservices/map/.eslintrc.json",
-          "hash": "9703569748258640057"
-        },
-        {
-          "file": "apps/microservices/map/jest.config.ts",
-          "hash": "18208996315782435498"
-        },
-        {
-          "file": "apps/microservices/map/project.json",
-          "hash": "3566697561879418982"
-        },
-        {
-          "file": "apps/microservices/map/src/app/app.controller.spec.ts",
-          "hash": "9499997688052526633",
-          "deps": [
-            "npm:@nestjs/testing"
+            "models",
+            "npm:mongoose"
           ]
         },
         {
-          "file": "apps/microservices/map/src/app/app.controller.ts",
-          "hash": "9005150069945785676",
+          "file": "apps/microservices/bike/src/v1/request.http",
+          "hash": "3545718927178658973"
+        },
+        {
+          "file": "apps/microservices/bike/src/v1/router.ts",
+          "hash": "18308244137443331566",
           "deps": [
-            "npm:@nestjs/common"
+            "npm:express",
+            "models",
+            "npm:mongoose"
           ]
         },
         {
-          "file": "apps/microservices/map/src/app/app.module.ts",
-          "hash": "3163250445227373966",
+          "file": "apps/microservices/bike/src/v1/validator.ts",
+          "hash": "9559929026039314592",
           "deps": [
-            "npm:@nestjs/common"
+            "models",
+            "npm:zod"
           ]
         },
         {
-          "file": "apps/microservices/map/src/app/app.service.spec.ts",
-          "hash": "8587461140686713758",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
+          "file": "apps/microservices/bike/tsconfig.app.json",
+          "hash": "17678014141582272727"
         },
         {
-          "file": "apps/microservices/map/src/app/app.service.ts",
-          "hash": "9967902337593410053",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/microservices/map/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/microservices/map/src/main.ts",
-          "hash": "11205222914964382693",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/core"
-          ]
-        },
-        {
-          "file": "apps/microservices/map/tsconfig.app.json",
-          "hash": "17625342078775932124"
-        },
-        {
-          "file": "apps/microservices/map/tsconfig.json",
+          "file": "apps/microservices/bike/tsconfig.json",
           "hash": "14785519187273610601"
         },
         {
-          "file": "apps/microservices/map/tsconfig.spec.json",
+          "file": "apps/microservices/bike/tsconfig.spec.json",
           "hash": "9110660443763673899"
         },
         {
-          "file": "apps/microservices/map/webpack.config.js",
-          "hash": "10619490397189790225",
-          "deps": [
-            "npm:@nx/webpack"
-          ]
-        }
-      ],
-      "auth": [
-        {
-          "file": "apps/technical-servicess/auth/.eslintrc.json",
-          "hash": "9703569748258640057"
-        },
-        {
-          "file": "apps/technical-servicess/auth/jest.config.ts",
-          "hash": "12050844359266736769"
-        },
-        {
-          "file": "apps/technical-servicess/auth/project.json",
-          "hash": "6082540726759532176"
-        },
-        {
-          "file": "apps/technical-servicess/auth/src/app/app.controller.spec.ts",
-          "hash": "9499997688052526633",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "apps/technical-servicess/auth/src/app/app.controller.ts",
-          "hash": "9005150069945785676",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/technical-servicess/auth/src/app/app.module.ts",
-          "hash": "3163250445227373966",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/technical-servicess/auth/src/app/app.service.spec.ts",
-          "hash": "8587461140686713758",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "apps/technical-servicess/auth/src/app/app.service.ts",
-          "hash": "9967902337593410053",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/technical-servicess/auth/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/technical-servicess/auth/src/main.ts",
-          "hash": "11205222914964382693",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/core"
-          ]
-        },
-        {
-          "file": "apps/technical-servicess/auth/tsconfig.app.json",
-          "hash": "17625342078775932124"
-        },
-        {
-          "file": "apps/technical-servicess/auth/tsconfig.json",
-          "hash": "14785519187273610601"
-        },
-        {
-          "file": "apps/technical-servicess/auth/tsconfig.spec.json",
-          "hash": "9110660443763673899"
-        },
-        {
-          "file": "apps/technical-servicess/auth/webpack.config.js",
+          "file": "apps/microservices/bike/webpack.config.js",
           "hash": "10619490397189790225",
           "deps": [
             "npm:@nx/webpack"
@@ -983,90 +792,83 @@
           ]
         }
       ],
-      "models": [
+      "auth": [
         {
-          "file": "lib/models/.eslintrc.json",
-          "hash": "10905178498824427073"
+          "file": "apps/technical-servicess/auth/.eslintrc.json",
+          "hash": "9703569748258640057"
         },
         {
-          "file": "lib/models/README.md",
-          "hash": "3868118482007639811"
+          "file": "apps/technical-servicess/auth/jest.config.ts",
+          "hash": "12050844359266736769"
         },
         {
-          "file": "lib/models/package.json",
-          "hash": "2920653077150419287"
+          "file": "apps/technical-servicess/auth/project.json",
+          "hash": "6082540726759532176"
         },
         {
-          "file": "lib/models/project.json",
-          "hash": "4537207318677740569"
-        },
-        {
-          "file": "lib/models/src/bike.ts",
-          "hash": "4288982754604262760",
+          "file": "apps/technical-servicess/auth/src/app/app.controller.spec.ts",
+          "hash": "9499997688052526633",
           "deps": [
-            "npm:zod"
+            "npm:@nestjs/testing"
           ]
         },
         {
-          "file": "lib/models/src/booking.ts",
-          "hash": "14201730767201851743",
+          "file": "apps/technical-servicess/auth/src/app/app.controller.ts",
+          "hash": "9005150069945785676",
           "deps": [
-            "npm:zod"
+            "npm:@nestjs/common"
           ]
         },
         {
-          "file": "lib/models/src/event.ts",
-          "hash": "10631713969360762470",
+          "file": "apps/technical-servicess/auth/src/app/app.module.ts",
+          "hash": "3163250445227373966",
           "deps": [
-            "npm:zod"
+            "npm:@nestjs/common"
           ]
         },
         {
-          "file": "lib/models/src/general/hex_color.ts",
-          "hash": "4262007157752104178",
+          "file": "apps/technical-servicess/auth/src/app/app.service.spec.ts",
+          "hash": "8587461140686713758",
           "deps": [
-            "npm:zod"
+            "npm:@nestjs/testing"
           ]
         },
         {
-          "file": "lib/models/src/general/object_id.ts",
-          "hash": "15232215396150839515",
+          "file": "apps/technical-servicess/auth/src/app/app.service.ts",
+          "hash": "9967902337593410053",
           "deps": [
-            "npm:mongoose",
-            "npm:zod"
+            "npm:@nestjs/common"
           ]
         },
         {
-          "file": "lib/models/src/index.ts",
-          "hash": "16697465920309581807",
+          "file": "apps/technical-servicess/auth/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/technical-servicess/auth/src/main.ts",
+          "hash": "11205222914964382693",
           "deps": [
-            "npm:zod",
-            "npm:express"
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
           ]
         },
         {
-          "file": "lib/models/src/routes.ts",
-          "hash": "14568841010205756316",
+          "file": "apps/technical-servicess/auth/tsconfig.app.json",
+          "hash": "17625342078775932124"
+        },
+        {
+          "file": "apps/technical-servicess/auth/tsconfig.json",
+          "hash": "14785519187273610601"
+        },
+        {
+          "file": "apps/technical-servicess/auth/tsconfig.spec.json",
+          "hash": "9110660443763673899"
+        },
+        {
+          "file": "apps/technical-servicess/auth/webpack.config.js",
+          "hash": "10619490397189790225",
           "deps": [
-            "npm:zod"
-          ]
-        },
-        {
-          "file": "lib/models/tsconfig.json",
-          "hash": "634795086719220447"
-        },
-        {
-          "file": "lib/models/tsconfig.lib.json",
-          "hash": "874530265290128605"
-        },
-        {
-          "file": "lib/models/vite.config.ts",
-          "hash": "4838207598615303628",
-          "deps": [
-            "npm:vite",
-            "npm:vite-plugin-dts",
-            "npm:path",
-            "npm:@nx/vite"
+            "npm:@nx/webpack"
           ]
         }
       ],
@@ -1150,75 +952,132 @@
           ]
         }
       ],
-      "ui": [
+      "admin-web-e2e": [
         {
-          "file": "lib/ui/.babelrc",
-          "hash": "2946678488919325452"
+          "file": "apps/web/admin-web-e2e/.eslintrc.json",
+          "hash": "7973176717762084071"
         },
         {
-          "file": "lib/ui/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "lib/ui/README.md",
-          "hash": "7076417556183857472"
-        },
-        {
-          "file": "lib/ui/jest.config.ts",
-          "hash": "1743408380013970671"
-        },
-        {
-          "file": "lib/ui/package.json",
-          "hash": "1635726171062184900"
-        },
-        {
-          "file": "lib/ui/project.json",
-          "hash": "6910783615747286093"
-        },
-        {
-          "file": "lib/ui/src/index.ts",
-          "hash": "10699556779931692575"
-        },
-        {
-          "file": "lib/ui/src/lib/ui-lib.module.scss",
-          "hash": "125145030238681982"
-        },
-        {
-          "file": "lib/ui/src/lib/ui-lib.spec.tsx",
-          "hash": "3862417808855154341",
+          "file": "apps/web/admin-web-e2e/cypress.config.ts",
+          "hash": "3631011454240625899",
           "deps": [
-            "npm:@testing-library/react"
+            "npm:cypress",
+            "npm:@nx/cypress"
           ]
         },
         {
-          "file": "lib/ui/src/lib/ui-lib.tsx",
-          "hash": "11986229267033160704"
+          "file": "apps/web/admin-web-e2e/project.json",
+          "hash": "8749006023115563292"
         },
         {
-          "file": "lib/ui/tsconfig.json",
-          "hash": "10374583890390798648"
+          "file": "apps/web/admin-web-e2e/src/e2e/app.cy.ts",
+          "hash": "7458908987440253163"
         },
         {
-          "file": "lib/ui/tsconfig.lib.json",
-          "hash": "11908890256657676622"
+          "file": "apps/web/admin-web-e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
         },
         {
-          "file": "lib/ui/tsconfig.spec.json",
-          "hash": "6514620907549802163"
+          "file": "apps/web/admin-web-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
         },
         {
-          "file": "lib/ui/vite.config.ts",
-          "hash": "2452520119564333884",
+          "file": "apps/web/admin-web-e2e/src/support/commands.ts",
+          "hash": "7314691991044890572"
+        },
+        {
+          "file": "apps/web/admin-web-e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
+        },
+        {
+          "file": "apps/web/admin-web-e2e/tsconfig.json",
+          "hash": "7790126871106100160"
+        }
+      ],
+      "user-web": [
+        {
+          "file": "apps/web/user-web/.eslintrc.json",
+          "hash": "15946965712701950674"
+        },
+        {
+          "file": "apps/web/user-web/index.html",
+          "hash": "7031539546807798060"
+        },
+        {
+          "file": "apps/web/user-web/project.json",
+          "hash": "5615702225976585121"
+        },
+        {
+          "file": "apps/web/user-web/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/web/user-web/src/app/app.module.scss",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/web/user-web/src/app/app.spec.tsx",
+          "hash": "8396781271001002094",
+          "deps": [
+            "npm:@testing-library/react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/web/user-web/src/app/app.tsx",
+          "hash": "16728322111794760797",
+          "deps": [
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/web/user-web/src/app/nx-welcome.tsx",
+          "hash": "4389251527819925043"
+        },
+        {
+          "file": "apps/web/user-web/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/web/user-web/src/main.tsx",
+          "hash": "763379880219152615",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/web/user-web/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/web/user-web/tsconfig.app.json",
+          "hash": "6208278882108140805"
+        },
+        {
+          "file": "apps/web/user-web/tsconfig.json",
+          "hash": "7240681206697848857"
+        },
+        {
+          "file": "apps/web/user-web/tsconfig.spec.json",
+          "hash": "17874504027954657085"
+        },
+        {
+          "file": "apps/web/user-web/vite.config.ts",
+          "hash": "9055246655674836220",
           "deps": [
             "npm:vite",
             "npm:@vitejs/plugin-react",
-            "npm:vite-plugin-dts",
-            "npm:path",
             "npm:@nx/vite"
           ]
         }
       ],
       "user": [
+        {
+          "file": "apps/microservices/user/.env",
+          "hash": "8691848557935514247"
+        },
         {
           "file": "apps/microservices/user/.eslintrc.json",
           "hash": "9703569748258640057"
@@ -1232,50 +1091,76 @@
           "hash": "14848784671557186865"
         },
         {
-          "file": "apps/microservices/user/src/app/app.controller.spec.ts",
-          "hash": "9499997688052526633",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "apps/microservices/user/src/app/app.controller.ts",
-          "hash": "9005150069945785676",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/microservices/user/src/app/app.module.ts",
-          "hash": "3163250445227373966",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "apps/microservices/user/src/app/app.service.spec.ts",
-          "hash": "8587461140686713758",
-          "deps": [
-            "npm:@nestjs/testing"
-          ]
-        },
-        {
-          "file": "apps/microservices/user/src/app/app.service.ts",
-          "hash": "9967902337593410053",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
           "file": "apps/microservices/user/src/assets/.gitkeep",
           "hash": "3244421341483603138"
         },
         {
-          "file": "apps/microservices/user/src/main.ts",
-          "hash": "11205222914964382693",
+          "file": "apps/microservices/user/src/index.d.ts",
+          "hash": "12102954850954615836",
           "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/core"
+            "npm:amqplib"
+          ]
+        },
+        {
+          "file": "apps/microservices/user/src/main.ts",
+          "hash": "12130495802099635390",
+          "deps": [
+            "npm:express",
+            "npm:morgan",
+            "npm:amqplib",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/microservices/user/src/utils/environment.ts",
+          "hash": "6419770725482096331",
+          "deps": [
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "apps/microservices/user/src/v1/controller.ts",
+          "hash": "7779364022962118470",
+          "deps": [
+            "npm:mongoose",
+            "models"
+          ]
+        },
+        {
+          "file": "apps/microservices/user/src/v1/db/datastore.ts",
+          "hash": "6562657016890245814",
+          "deps": [
+            "npm:mongoose",
+            "models"
+          ]
+        },
+        {
+          "file": "apps/microservices/user/src/v1/db/schemas/user.ts",
+          "hash": "4286146447644901967",
+          "deps": [
+            "models",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/microservices/user/src/v1/request.http",
+          "hash": "6674325671825117594"
+        },
+        {
+          "file": "apps/microservices/user/src/v1/user.ts",
+          "hash": "664481625568525016",
+          "deps": [
+            "npm:express",
+            "models",
+            "npm:mongoose"
+          ]
+        },
+        {
+          "file": "apps/microservices/user/src/v1/validator.ts",
+          "hash": "13176040383264658884",
+          "deps": [
+            "models",
+            "npm:zod"
           ]
         },
         {
@@ -1448,6 +1333,193 @@
           "hash": "10619490397189790225",
           "deps": [
             "npm:@nx/webpack"
+          ]
+        }
+      ],
+      "user-web-e2e": [
+        {
+          "file": "apps/web/user-web-e2e/.eslintrc.json",
+          "hash": "7973176717762084071"
+        },
+        {
+          "file": "apps/web/user-web-e2e/cypress.config.ts",
+          "hash": "3631011454240625899",
+          "deps": [
+            "npm:cypress",
+            "npm:@nx/cypress"
+          ]
+        },
+        {
+          "file": "apps/web/user-web-e2e/project.json",
+          "hash": "1052701447953074599"
+        },
+        {
+          "file": "apps/web/user-web-e2e/src/e2e/app.cy.ts",
+          "hash": "568355851414172805"
+        },
+        {
+          "file": "apps/web/user-web-e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
+        },
+        {
+          "file": "apps/web/user-web-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/web/user-web-e2e/src/support/commands.ts",
+          "hash": "7314691991044890572"
+        },
+        {
+          "file": "apps/web/user-web-e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
+        },
+        {
+          "file": "apps/web/user-web-e2e/tsconfig.json",
+          "hash": "7790126871106100160"
+        }
+      ],
+      "map": [
+        {
+          "file": "apps/microservices/map/.eslintrc.json",
+          "hash": "9703569748258640057"
+        },
+        {
+          "file": "apps/microservices/map/jest.config.ts",
+          "hash": "18208996315782435498"
+        },
+        {
+          "file": "apps/microservices/map/project.json",
+          "hash": "3566697561879418982"
+        },
+        {
+          "file": "apps/microservices/map/src/app/app.controller.spec.ts",
+          "hash": "9499997688052526633",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/microservices/map/src/app/app.controller.ts",
+          "hash": "9005150069945785676",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/microservices/map/src/app/app.module.ts",
+          "hash": "3163250445227373966",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/microservices/map/src/app/app.service.spec.ts",
+          "hash": "8587461140686713758",
+          "deps": [
+            "npm:@nestjs/testing"
+          ]
+        },
+        {
+          "file": "apps/microservices/map/src/app/app.service.ts",
+          "hash": "9967902337593410053",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "apps/microservices/map/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/microservices/map/src/main.ts",
+          "hash": "11205222914964382693",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "apps/microservices/map/tsconfig.app.json",
+          "hash": "17625342078775932124"
+        },
+        {
+          "file": "apps/microservices/map/tsconfig.json",
+          "hash": "14785519187273610601"
+        },
+        {
+          "file": "apps/microservices/map/tsconfig.spec.json",
+          "hash": "9110660443763673899"
+        },
+        {
+          "file": "apps/microservices/map/webpack.config.js",
+          "hash": "10619490397189790225",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
+        }
+      ],
+      "notification": [
+        {
+          "file": "apps/technical-servicess/notification/.eslintrc.json",
+          "hash": "9703569748258640057"
+        },
+        {
+          "file": "apps/technical-servicess/notification/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/technical-servicess/notification/config/serviceAccountKey.json",
+          "hash": "11948503848388739537"
+        },
+        {
+          "file": "apps/technical-servicess/notification/jest.config.ts",
+          "hash": "4964226851140487593"
+        },
+        {
+          "file": "apps/technical-servicess/notification/project.json",
+          "hash": "4654754851001474772"
+        },
+        {
+          "file": "apps/technical-servicess/notification/src/notificationServer.ts",
+          "hash": "14166071032909409433",
+          "deps": [
+            "npm:firebase-admin",
+            "npm:firebase/app",
+            "npm:firebase/messaging",
+            "npm:amqplib"
+          ]
+        },
+        {
+          "file": "apps/technical-servicess/notification/src/topics.ts",
+          "hash": "3083219556303321314",
+          "deps": [
+            "npm:firebase-admin"
+          ]
+        },
+        {
+          "file": "apps/technical-servicess/notification/tsconfig.app.json",
+          "hash": "17678014141582272727"
+        },
+        {
+          "file": "apps/technical-servicess/notification/tsconfig.json",
+          "hash": "12480499342767391486"
+        },
+        {
+          "file": "apps/technical-servicess/notification/tsconfig.spec.json",
+          "hash": "9110660443763673899"
+        },
+        {
+          "file": "apps/technical-servicess/notification/webpack.config.js",
+          "hash": "10619490397189790225",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
+        },
+        {
+          "file": "apps/technical-servicess/notification/src/main.ts",
+          "hash": "15168650545135896731",
+          "deps": [
+            "npm:express"
           ]
         }
       ]

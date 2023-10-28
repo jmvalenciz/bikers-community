@@ -4,7 +4,8 @@ import amqplib, { Channel } from 'amqplib';
 import { env } from './utils/environment';
 import mongoose from 'mongoose';
 
-import { ApiRouterV1 } from './v1/router';
+import { ApiRouterV1, consumeBrokerV1 } from './v1/router';
+import { BookingAdapter } from '@bikers-community/adapters';
 
 if (env.NODE_ENV != 'development') {
   // eslint-disable-next-line @typescript-eslint/no-empty-function
@@ -57,6 +58,7 @@ async function main() {
     }
     next();
   });
+  consumeBrokerV1(channel, BookingAdapter.queue);
 }
 
 main();

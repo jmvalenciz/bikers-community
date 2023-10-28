@@ -18,8 +18,8 @@ export const validate = (schema: AnyZodObject) =>
       req.body = body;
       req.params = params;
       req.query = query;
-      return next();
+      next();
     } catch (error) {
-      return res.status(400).json(error);
+      res.status(400).json(error);
     }
 };

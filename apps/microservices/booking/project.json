@@ -16,7 +16,8 @@
         "tsConfig": "apps/microservices/booking/tsconfig.app.json",
         "assets": ["apps/microservices/booking/src/assets"],
         "isolatedConfig": true,
-        "webpackConfig": "apps/microservices/booking/webpack.config.js"
+        "webpackConfig": "apps/microservices/booking/webpack.config.js",
+        "generatePackageJson": true
       },
       "configurations": {
         "development": {},
@@ -27,12 +28,16 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "booking:build",
-        "runtimeArgs": ["-r dotenv/config"]
+        "buildTarget": "booking:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "booking:build:development"
+          "buildTarget": "booking:build:development",
+          "runtimeArgs": ["-r", "dotenv/config"],
+          "args": [
+            "dotenv_config_path=./apps/microservices/booking/.env",
+            "dotenv_config_debug=true"
+          ]
         },
         "production": {
           "buildTarget": "booking:build:production"
@@ -40,7 +45,7 @@
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["apps/microservices/booking/**/*.ts"]

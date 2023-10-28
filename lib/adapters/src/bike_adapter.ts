@@ -1,13 +1,32 @@
-import { Bike, ObjectId } from "@bikers-community/models";
+import { Channel } from 'amqplib';
+import { Types } from "mongoose";
 
 export class BikeAdapter {
-  static async getBike(bikeId: ObjectId): Promise<Bike|null> {
-    // comunicacion con el broker
-
-    return {};
+  queue = "bikes";
+  channel: Channel;
+  constructor(channel: Channel){
+    this.channel = channel;
   }
-  static async updateBikeStatus(bikeId: ObjectId, newStatus: string): Promise<boolean|null> {
-    // comunicacion con el broker
-    return true;
+  async freeBike(bikeId: Types.ObjectId): Promise<boolean> {
+    await this.channel.assertQueue(this.queue, { durable: false });
+    const data = {
+      action: 'SET_BIKE_STATUS',
+      body: {
+        bikeId,
+        newStatus: "AVAILABLE"
+      }
+    }
+    return this.channel.sendToQueue(this.queue, Buffer.from(JSON.stringify(data)));
+  }
+  async bookBike(bikeId: Types.ObjectId): Promise<boolean> {
+    await this.channel.assertQueue(this.queue, { durable: false });
+    const data = {
+      action: 'SET_BIKE_STATUS',
+      body: {
+        bikeId,
+        newStatus: "BOOKED"
+      }
+    }
+    return this.channel.sendToQueue(this.queue, Buffer.from(JSON.stringify(data)), {contentEncoding:"base64"});
   }
 }

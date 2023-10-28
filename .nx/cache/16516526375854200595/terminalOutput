@@ -1,0 +1,9 @@
+[36mvite v4.3.9 [32mbuilding for production...[36m[39m
+[2K[1Gtransforming (1) [2msrc/index.ts[22m[2K[1Gtransforming (8) [2m../../node_modules/mongoose/dist/browser.umd.js[22m[2K[1Gtransforming (11) [2msrc/general/hex_color.ts[22m[2K[1G[32m✓[39m 11 modules transformed.
+[2K[1Grendering chunks (1)...[2K[1G[2K[1Gcomputing gzip size (0)...[2K[1Gcomputing gzip size (1)...[2K[1G[2m../../dist/lib/models/[22m[36mindex.mjs  [39m[1m[33m1,355.39 kB[39m[22m[2m │ gzip: 306.22 kB[22m
+[2K[1Grendering chunks (1)...[2K[1G[2K[1Gcomputing gzip size (1)...[2K[1G[2m../../dist/lib/models/[22m[36mindex.js  [39m[1m[33m934.01 kB[39m[22m[2m │ gzip: 269.34 kB[22m
+[32m
+[36m[vite:dts][32m Start generate declaration files...[39m
+[32m✓ built in 6.54s[39m
+[32m[36m[vite:dts][32m Declaration files built in 2161ms.
+[39m

@@ -1,1 +1,1 @@
-export * from './lib/lib/adapters';
+export * from './bike_adapter';

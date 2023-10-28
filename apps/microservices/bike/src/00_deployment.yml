@@ -1,0 +1,49 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bike
+spec:
+  selector:
+    app: bike
+  ports:
+  - name: http
+    port: 80
+    targetPort: 3000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bike
+  labels:
+    app: bike
+    layer: backend
+    type: microservice
+    name: bikers-community
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bike
+  template:
+    metadata:
+      labels:
+        app: bike
+    spec:
+      containers:
+      - name: bike
+        image: bikers-community/bookig:latest
+        ports:
+        - containerPort: 3000
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 3000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        resources:
+          requests:
+            memory: "250Mi"
+            cpu: "500m"
+          limits:
+            memory: "250Mi"
+            cpu: "500m"

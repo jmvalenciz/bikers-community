@@ -8,7 +8,6 @@ const router = Router();
 
 router.get('/health', (req, res, next)=>{
     res.sendStatus(200);
-    next();
 });
   
 

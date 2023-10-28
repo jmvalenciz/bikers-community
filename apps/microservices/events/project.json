@@ -16,7 +16,8 @@
         "tsConfig": "apps/microservices/events/tsconfig.app.json",
         "assets": ["apps/microservices/events/src/assets"],
         "isolatedConfig": true,
-        "webpackConfig": "apps/microservices/events/webpack.config.js"
+        "webpackConfig": "apps/microservices/events/webpack.config.js",
+        "generatePackageJson": true
       },
       "configurations": {
         "development": {},

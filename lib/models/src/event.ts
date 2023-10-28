@@ -9,17 +9,19 @@ export const Event = z.object({
     createdAt: z.date(),
     eventName: z.string().min(3).max(250),
     description: z.string().min(3).max(500),
-    eventDate: z.date()
+    eventDate: z.coerce.date()
 });
 export const NewEvent = Event.omit({
     eventId: true,
+    createdAt: true,
     updatedByAdminId: true,
     updatedAt: true
 });
 export const UpdateEvent = Event.omit({
     eventId: true,
     createdByAdminId: true,
-    createdAt: true
+    createdAt: true,
+    updatedAt: true,
 });
 
 export type Event = z.infer<typeof Event>;

@@ -13,17 +13,19 @@ export const Route = z.object({
         lat: z.number(),
     }),
     description: z.string().min(3).max(500),
-    routeDate: z.date()
+    routeDate: z.coerce.date()
 });
 export const NewRoute = Route.omit({
     routeId: true,
     updatedByAdminId: true,
     updatedAt: true,
+    createdAt: true
 });
 export const UpdateRoute = Route.omit({
     routeId: true,
     createdByAdminId: true,
     createdAt: true,
+    updatedAt: true
 });
 
 export type Route = z.infer<typeof Route>;

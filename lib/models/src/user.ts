@@ -1,9 +1,8 @@
 import { z } from 'zod';
 import { ObjectIdSchema } from './general/object_id';
-import mongoose from 'mongoose';
 
 export const User = z.object({
-  userId: ObjectIdSchema,
+  _id: ObjectIdSchema,
   userName: z.string().min(3).max(250),
   createdByAdminId: ObjectIdSchema,
   updatedByAdminId: ObjectIdSchema,
@@ -16,10 +15,8 @@ export const UserData = z.object({
 });
 
 
-
-
 export const NewUser = User.omit({
-  userId: true,
+  _id: true,
   updatedAt:true,
   createdAt:true
 });
@@ -31,7 +28,7 @@ export const UpdateUser = User.omit({
 });
 
 export type User = z.infer<typeof User>;
-export type UserData = z.infer<typeof UserData>;
+export type UserData = z.infer<typeof UserData>; 
 
 export type NewUser = z.infer<typeof NewUser>;
-export type UpdateUser = z.infer<typeof UpdateUser>;
+export type UpdateUser = z.infer<typeof UpdateUser>; 

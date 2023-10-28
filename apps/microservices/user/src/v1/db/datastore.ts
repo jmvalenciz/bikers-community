@@ -6,12 +6,15 @@ export class UserDataStore {
   static async getUserById(
     userId: Types.ObjectId
   ): Promise<User | null> {
-    return await UserDB.findOne({ userId }).lean();
+    return await UserDB.findOne({ _id: userId }).lean();
   }
- 
+
   static async newUser(newUser: NewUser): Promise<User> {
-    
-    const user: HydratedDocument<User> = new UserDB(newUser); 
+
+    const user: HydratedDocument<User> = new UserDB({
+      ...newUser
+      
+    });
     await user.save();
     return user;
   }

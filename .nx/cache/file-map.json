@@ -161,7 +161,7 @@
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "11975791656348148225"
+        "hash": "173748206690199699"
       },
       {
         "file": ".nx/cache/lockfile.hash",
@@ -173,7 +173,7 @@
       },
       {
         "file": ".nx/cache/project-graph.json",
-        "hash": "11543156053499626243"
+        "hash": "6168185139630855840"
       },
       {
         "file": ".nx/cache/run.json",
@@ -254,6 +254,18 @@
       {
         "file": ".nx/cache/terminalOutputs/13099026983999302720",
         "hash": "5152887217817672819"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/18442336218097511200",
+        "hash": "6947354892160816880"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/16313220807379449077",
+        "hash": "2820916144190247835"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/11627154964688597602",
+        "hash": "11668874187983737732"
       }
     ],
     "projectFileMap": {
@@ -370,7 +382,7 @@
         },
         {
           "file": "lib/adapters/src/bike_adapter.ts",
-          "hash": "4323425780087390878",
+          "hash": "12102835405284087384",
           "deps": [
             "npm:amqplib",
             "npm:mongoose"
@@ -396,6 +408,14 @@
             "npm:vite-plugin-dts",
             "npm:path",
             "npm:@nx/vite"
+          ]
+        },
+        {
+          "file": "lib/adapters/src/notification_adapter.ts",
+          "hash": "5320013846595008147",
+          "deps": [
+            "npm:amqplib",
+            "npm:mongoose"
           ]
         }
       ],
@@ -1481,17 +1501,14 @@
         },
         {
           "file": "apps/technical-servicess/notification/src/notificationServer.ts",
-          "hash": "14166071032909409433",
+          "hash": "8566745688315949255",
           "deps": [
-            "npm:firebase-admin",
-            "npm:firebase/app",
-            "npm:firebase/messaging",
             "npm:amqplib"
           ]
         },
         {
           "file": "apps/technical-servicess/notification/src/topics.ts",
-          "hash": "3083219556303321314",
+          "hash": "4922787520765850584",
           "deps": [
             "npm:firebase-admin"
           ]
@@ -1517,10 +1534,14 @@
         },
         {
           "file": "apps/technical-servicess/notification/src/main.ts",
-          "hash": "15168650545135896731",
+          "hash": "5827625798959824459",
           "deps": [
             "npm:express"
           ]
+        },
+        {
+          "file": "apps/technical-servicess/notification/.env",
+          "hash": "1592789950978584722"
         }
       ]
     }

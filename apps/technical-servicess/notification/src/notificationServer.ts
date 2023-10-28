@@ -1,19 +1,8 @@
-import * as admin from 'firebase-admin';
 import { sendNotificationToTopic } from './topics';
-import firebase from 'firebase/app';
-import 'firebase/messaging';
-
-const serviceAccount = require('../config/serviceAccountKey.json');
-
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-});
-
-
 
 import * as amqp from 'amqplib';
 
-const rabbitMQUrl = 'amqp://localhost';
+const rabbitMQUrl = `amqp://${process.env.BROKER_HOST}:${process.env.BROKER_PORT}`;
 
 async function setupRabbitMQ() {
   try {
@@ -27,10 +16,14 @@ async function setupRabbitMQ() {
 
     channel.consume(queue, (msg) => {
       if (msg) { 
+
         const messageData = JSON.parse(msg.content.toString());
-        const { token, message, topicName } = messageData;
-    
-        sendNotificationToTopic(topicName, { title: 'Título', body: message });
+
+        switch(messageData.action){
+          case 'sendMessageToTopic':
+            const { title, message, topicName } = messageData.body;
+            sendNotificationToTopic(topicName, { title: title, body: message });
+        }
       }
     }, { noAck: true });
   } catch (error) {

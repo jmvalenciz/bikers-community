@@ -726,6 +726,61 @@
         "implicitDependencies": []
       }
     },
+    "admin-web-e2e": {
+      "name": "admin-web-e2e",
+      "type": "e2e",
+      "data": {
+        "name": "admin-web-e2e",
+        "root": "apps/web/admin-web-e2e",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/web/admin-web-e2e/src",
+        "projectType": "application",
+        "targets": {
+          "e2e": {
+            "inputs": [
+              "default",
+              "^production"
+            ],
+            "executor": "@nx/cypress:cypress",
+            "options": {
+              "cypressConfig": "apps/web/admin-web-e2e/cypress.config.ts",
+              "devServerTarget": "admin-web:serve:development",
+              "testingType": "e2e"
+            },
+            "configurations": {
+              "production": {
+                "devServerTarget": "admin-web:serve:production"
+              },
+              "ci": {
+                "devServerTarget": "admin-web:serve-static"
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "apps/web/admin-web-e2e/**/*.{js,ts}"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "tags": [],
+        "implicitDependencies": [
+          "admin-web"
+        ]
+      }
+    },
     "map": {
       "name": "map",
       "type": "app",
@@ -823,61 +878,6 @@
         },
         "tags": [],
         "implicitDependencies": []
-      }
-    },
-    "admin-web-e2e": {
-      "name": "admin-web-e2e",
-      "type": "e2e",
-      "data": {
-        "name": "admin-web-e2e",
-        "root": "apps/web/admin-web-e2e",
-        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/web/admin-web-e2e/src",
-        "projectType": "application",
-        "targets": {
-          "e2e": {
-            "inputs": [
-              "default",
-              "^production"
-            ],
-            "executor": "@nx/cypress:cypress",
-            "options": {
-              "cypressConfig": "apps/web/admin-web-e2e/cypress.config.ts",
-              "devServerTarget": "admin-web:serve:development",
-              "testingType": "e2e"
-            },
-            "configurations": {
-              "production": {
-                "devServerTarget": "admin-web:serve:production"
-              },
-              "ci": {
-                "devServerTarget": "admin-web:serve-static"
-              }
-            }
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore",
-              "{workspaceRoot}/eslint.config.js"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "apps/web/admin-web-e2e/**/*.{js,ts}"
-              ]
-            },
-            "configurations": {}
-          }
-        },
-        "tags": [],
-        "implicitDependencies": [
-          "admin-web"
-        ]
       }
     },
     "user-web-e2e": {
@@ -14735,6 +14735,23 @@
         "type": "static"
       }
     ],
+    "admin-web-e2e": [
+      {
+        "source": "admin-web-e2e",
+        "target": "admin-web",
+        "type": "implicit"
+      },
+      {
+        "source": "admin-web-e2e",
+        "target": "npm:cypress",
+        "type": "static"
+      },
+      {
+        "source": "admin-web-e2e",
+        "target": "npm:@nx/cypress",
+        "type": "static"
+      }
+    ],
     "map": [
       {
         "source": "map",
@@ -14754,23 +14771,6 @@
       {
         "source": "map",
         "target": "npm:@nx/webpack",
-        "type": "static"
-      }
-    ],
-    "admin-web-e2e": [
-      {
-        "source": "admin-web-e2e",
-        "target": "admin-web",
-        "type": "implicit"
-      },
-      {
-        "source": "admin-web-e2e",
-        "target": "npm:cypress",
-        "type": "static"
-      },
-      {
-        "source": "admin-web-e2e",
-        "target": "npm:@nx/cypress",
         "type": "static"
       }
     ],

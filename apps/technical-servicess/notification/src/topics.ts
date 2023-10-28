@@ -1,8 +1,15 @@
 import * as admin from 'firebase-admin';
+const serviceAccount = require('../config/serviceAccountKey.json');
+
+const app = admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+});
+
+const messaging = admin.messaging(app);
 
 export async function subscribeToTopic(userToken: string, topicName: string): Promise<void> {
   try {
-    await admin.messaging().subscribeToTopic([userToken], topicName);
+    await messaging.subscribeToTopic([userToken], topicName);
 
     console.log(`Usuario ${userToken} suscrito al tópico ${topicName}`);
   } catch (error) {
@@ -20,7 +27,7 @@ export async function sendNotificationToTopic(topicName: string, notificationDat
       },
     };
 
-    await admin.messaging().send(message);
+    await messaging.send(message);
 
     console.log(`Notificación enviada al tópico ${topicName}`);
   } catch (error) {

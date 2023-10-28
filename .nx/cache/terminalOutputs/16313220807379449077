@@ -1,0 +1,324 @@
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.48 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (c8d0699818e20190)
+[1m[31mDebugger listening on ws://localhost:9229/3697d9a6-2ebb-4606-91a1-419c5885ec1d[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/3697d9a6-2ebb-4606-91a1-419c5885ec1d[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/notificationServer.ts:11[39m[22m
+[1m[31mfirebase.initializeApp({[39m[22m
+[1m[31m         ^[39m[22m
+[1m[31m[39m[22m
+[1m[31mTypeError: Cannot read properties of undefined (reading 'initializeApp')[39m[22m
+[1m[31m    at Array.<anonymous> (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/notificationServer.ts:11:10)[39m[22m
+[1m[31m    at __webpack_require__ (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/webpack/bootstrap:19:1)[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/main.ts:3:1[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/main.js:191:3[39m[22m
+[1m[31m    at Object.<anonymous> (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/main.js:196:12)[39m[22m
+[1m[31m    at Module._compile (node:internal/modules/cjs/loader:1256:14)[39m[22m
+[1m[31m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1310:10)[39m[22m
+[1m[31m    at Module.load (node:internal/modules/cjs/loader:1119:32)[39m[22m
+[1m[31m    at Function.Module._load (node:internal/modules/cjs/loader:960:12)[39m[22m
+[1m[31m    at Function.Module._load (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/node_modules/@nx/js/src/executors/node/node-with-require-overrides.js:10:31)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.48 KiB [1m[33m[entry][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (c8d0699818e20190)
+[1m[31mDebugger listening on ws://localhost:9229/6fe63068-00d9-4b3d-9f90-f09e271cb01e[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/6fe63068-00d9-4b3d-9f90-f09e271cb01e[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/notificationServer.ts:11[39m[22m
+[1m[31mfirebase.initializeApp({[39m[22m
+[1m[31m         ^[39m[22m
+[1m[31mTypeError: Cannot read properties of undefined (reading 'initializeApp')[39m[22m
+[1m[31m    at Array.<anonymous> (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/notificationServer.ts:11:10)[39m[22m
+[1m[31m    at __webpack_require__ (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/webpack/bootstrap:19:1)[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/main.ts:3:1[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/main.js:191:3[39m[22m
+[1m[31m    at Object.<anonymous> (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/main.js:196:12)[39m[22m
+[1m[31m    at Module._compile (node:internal/modules/cjs/loader:1256:14)[39m[22m
+[1m[31m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1310:10)[39m[22m
+[1m[31m    at Module.load (node:internal/modules/cjs/loader:1119:32)[39m[22m
+[1m[31m    at Function.Module._load (node:internal/modules/cjs/loader:960:12)[39m[22m
+[1m[31m    at Function.Module._load (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/node_modules/@nx/js/src/executors/node/node-with-require-overrides.js:10:31)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.5 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3b00496c7903bee1)
+[1m[31mDebugger listening on ws://localhost:9229/bb353642-ffcd-4b56-a256-0b3d034da423[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/bb353642-ffcd-4b56-a256-0b3d034da423[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/notificationServer.ts:21[39m[22m
+[1m[31mfirebase.initializeApp(firebaseConfig);[39m[22m
+[1m[31m         ^[39m[22m
+[1m[31m[39m[22m
+[1m[31mTypeError: Cannot read properties of undefined (reading 'initializeApp')[39m[22m
+[1m[31m    at Array.<anonymous> (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/notificationServer.ts:21:10)[39m[22m
+[1m[31m    at __webpack_require__ (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/webpack/bootstrap:19:1)[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/main.ts:3:1[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/main.js:192:3[39m[22m
+[1m[31m    at Object.<anonymous> (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/main.js:197:12)[39m[22m
+[1m[31m    at Module._compile (node:internal/modules/cjs/loader:1256:14)[39m[22m
+[1m[31m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1310:10)[39m[22m
+[1m[31m    at Module.load (node:internal/modules/cjs/loader:1119:32)[39m[22m
+[1m[31m    at Function.Module._load (node:internal/modules/cjs/loader:960:12)[39m[22m
+[1m[31m    at Function.Module._load (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/node_modules/@nx/js/src/executors/node/node-with-require-overrides.js:10:31)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.48 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b8e1249015a08d9d)
+[1m[31mDebugger listening on ws://localhost:9229/bb5f4739-c900-4046-b36f-7559b7cb607d[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/bb5f4739-c900-4046-b36f-7559b7cb607d[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/notificationServer.ts:11[39m[22m
+[1m[31mfirebase.initializeApp({[39m[22m
+[1m[31m         ^[39m[22m
+[1m[31m[39m[22m
+[1m[31mTypeError: Cannot read properties of undefined (reading 'initializeApp')[39m[22m
+[1m[31m    at Array.<anonymous> (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/notificationServer.ts:11:10)[39m[22m
+[1m[31m    at __webpack_require__ (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/webpack/bootstrap:19:1)[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/main.ts:3:1[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/main.js:191:3[39m[22m
+[1m[31m    at Object.<anonymous> (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/main.js:196:12)[39m[22m
+[1m[31m    at Module._compile (node:internal/modules/cjs/loader:1256:14)[39m[22m
+[1m[31m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1310:10)[39m[22m
+[1m[31m    at Module.load (node:internal/modules/cjs/loader:1119:32)[39m[22m
+[1m[31m    at Function.Module._load (node:internal/modules/cjs/loader:960:12)[39m[22m
+[1m[31m    at Function.Module._load (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/node_modules/@nx/js/src/executors/node/node-with-require-overrides.js:10:31)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.38 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (17448dac7bfac71b)
+[1m[31mDebugger listening on ws://localhost:9229/4f4e615c-9a86-44d3-9b60-837b2849ee41[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/4f4e615c-9a86-44d3-9b60-837b2849ee41[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/notificationServer.ts:9[39m[22m
+[1m[31mfirebase.initializeApp({[39m[22m
+[1m[31m         ^[39m[22m
+[1m[31m[39m[22m
+[1m[31mTypeError: Cannot read properties of undefined (reading 'initializeApp')[39m[22m
+[1m[31m    at Array.<anonymous> (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/notificationServer.ts:9:10)[39m[22m
+[1m[31m    at __webpack_require__ (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/webpack/bootstrap:19:1)[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/main.ts:3:1[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/main.js:189:3[39m[22m
+[1m[31m    at Object.<anonymous> (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/main.js:194:12)[39m[22m
+[1m[31m    at Module._compile (node:internal/modules/cjs/loader:1256:14)[39m[22m
+[1m[31m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1310:10)[39m[22m
+[1m[31m    at Module.load (node:internal/modules/cjs/loader:1119:32)[39m[22m
+[1m[31m    at Function.Module._load (node:internal/modules/cjs/loader:960:12)[39m[22m
+[1m[31m    at Function.Module._load (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/node_modules/@nx/js/src/executors/node/node-with-require-overrides.js:10:31)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.38 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ef50cfeb2951e0b0)
+[1m[31mDebugger listening on ws://localhost:9229/b316d883-ec0f-4cbc-8267-1ee0212f4810[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/b316d883-ec0f-4cbc-8267-1ee0212f4810[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/notificationServer.ts:10[39m[22m
+[1m[31mfirebase.initializeApp({[39m[22m
+[1m[31m         ^[39m[22m
+[1m[31m[39m[22m
+[1m[31mTypeError: Cannot read properties of undefined (reading 'initializeApp')[39m[22m
+[1m[31m    at Array.<anonymous> (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/notificationServer.ts:10:10)[39m[22m
+[1m[31m    at __webpack_require__ (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/webpack/bootstrap:19:1)[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/main.ts:3:1[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/main.js:189:3[39m[22m
+[1m[31m    at Object.<anonymous> (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/main.js:194:12)[39m[22m
+[1m[31m    at Module._compile (node:internal/modules/cjs/loader:1256:14)[39m[22m
+[1m[31m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1310:10)[39m[22m
+[1m[31m    at Module.load (node:internal/modules/cjs/loader:1119:32)[39m[22m
+[1m[31m    at Function.Module._load (node:internal/modules/cjs/loader:960:12)[39m[22m
+[1m[31m    at Function.Module._load (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/node_modules/@nx/js/src/executors/node/node-with-require-overrides.js:10:31)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.38 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3d84afb742854a35)
+[1m[31mDebugger listening on ws://localhost:9229/594b80c8-946f-4299-83c0-29827957663b[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/594b80c8-946f-4299-83c0-29827957663b[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/notificationServer.ts:10[39m[22m
+[1m[31mfirebase.initializeApp({[39m[22m
+[1m[31m         ^[39m[22m
+[1m[31m[39m[22m
+[1m[31mTypeError: Cannot read properties of undefined (reading 'initializeApp')[39m[22m
+[1m[31m    at Array.<anonymous> (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/notificationServer.ts:10:10)[39m[22m
+[1m[31m    at __webpack_require__ (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/webpack/bootstrap:19:1)[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/webpack:/src/main.ts:3:1[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/main.js:189:3[39m[22m
+[1m[31m    at Object.<anonymous> (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/dist/apps/technical-servicess/notification/main.js:194:12)[39m[22m
+[1m[31m    at Module._compile (node:internal/modules/cjs/loader:1256:14)[39m[22m
+[1m[31m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1310:10)[39m[22m
+[1m[31m    at Module.load (node:internal/modules/cjs/loader:1119:32)[39m[22m
+[1m[31m    at Function.Module._load (node:internal/modules/cjs/loader:960:12)[39m[22m
+[1m[31m    at Function.Module._load (/Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/node_modules/@nx/js/src/executors/node/node-with-require-overrides.js:10:31)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.2 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/technical-servicess/notification/src/notificationServer.ts:[32m[1m8:1[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'firebase'.
+  [0m [90m  6 |[39m [36mconst[39m serviceAccount [33m=[39m require([32m'../config/serviceAccountKey.json'[39m)[33m;[39m[0m
+  [0m [90m  7 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m  8 |[39m firebase[33m.[39minitializeApp({[0m
+  [0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m  9 |[39m   apiKey[33m:[39m [32m"AIzaSyBULMyh_ycSxWtxDwCZK5CZtgq11dYGVY8"[39m[33m,[39m[0m
+  [0m [90m 10 |[39m   authDomain[33m:[39m [32m"bikers-community-2a748.firebaseapp.com"[39m[33m,[39m[0m
+  [0m [90m 11 |[39m   projectId[33m:[39m [32m"bikers-community-2a748"[39m[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (37063813e01f18b6)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.28 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (1a5fa31f1c316a83)
+[1m[31mDebugger listening on ws://localhost:9229/e6fe2bcd-9f8a-4d72-94ec-58efa75a336c[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/e6fe2bcd-9f8a-4d72-94ec-58efa75a336c[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.29 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (a29dddd08f5a2629)
+[1m[31mDebugger listening on ws://localhost:9229/0097040b-643f-42fc-b337-dfcd80a14784[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/0097040b-643f-42fc-b337-dfcd80a14784[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.44 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3b01df5d0030a53c)
+[1m[31mDebugger listening on ws://localhost:9229/01fd67f4-e7c4-48fb-981e-8e93f9744baa[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/01fd67f4-e7c4-48fb-981e-8e93f9744baa[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31mFirebaseError: Messaging: This browser doesn't support the API's required to use the Firebase SDK. (messaging/unsupported-browser).[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/node_modules/@firebase/messaging/src/api.ts:56:29[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.5 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (dcd4273d044cfaba)
+[1m[31mDebugger listening on ws://localhost:9229/2c010273-b2cc-4a1c-aac5-87ce7d33333f[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/2c010273-b2cc-4a1c-aac5-87ce7d33333f[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31mFirebaseError: Messaging: This browser doesn't support the API's required to use the Firebase SDK. (messaging/unsupported-browser).[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/node_modules/@firebase/messaging/src/api.ts:56:29[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.44 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ec8c42732e966b4c)
+[1m[31mDebugger listening on ws://localhost:9229/31b472e1-37f3-44cb-acfc-dedd2c3574c3[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/31b472e1-37f3-44cb-acfc-dedd2c3574c3[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31mFirebaseError: Messaging: This browser doesn't support the API's required to use the Firebase SDK. (messaging/unsupported-browser).[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/node_modules/@firebase/messaging/src/api.ts:56:29[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.58 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/technical-servicess/notification/src/topics.ts:[32m[1m5:37[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'serviceAccountKey'. Did you mean 'serviceAccount'?
+  [0m [90m 3 |[39m[0m
+  [0m [90m 4 |[39m admin[33m.[39minitializeApp({[0m
+  [0m[31m[1m>[22m[39m[90m 5 |[39m   credential[33m:[39m admin[33m.[39mcredential[33m.[39mcert(serviceAccountKey)[33m,[39m[0m
+  [0m [90m   |[39m                                     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 6 |[39m })[0m
+  [0m [90m 7 |[39m[0m
+  [0m [90m 8 |[39m [36mexport[39m [36masync[39m [36mfunction[39m subscribeToTopic(userToken[33m:[39m string[33m,[39m topicName[33m:[39m string)[33m:[39m [33mPromise[39m[33m<[39m[36mvoid[39m[33m>[39m {[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (37ea9df534995d2c)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.58 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (a51db939ae92f350)
+[1m[31mDebugger listening on ws://localhost:9229/25043f6c-b45c-4e73-8f54-3ce2d233e7e1[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/25043f6c-b45c-4e73-8f54-3ce2d233e7e1[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31mFirebaseError: Messaging: This browser doesn't support the API's required to use the Firebase SDK. (messaging/unsupported-browser).[39m[22m
+[1m[31m    at /Users/felipealvarezbenitez/Documents/Proyectos/bikers-community/node_modules/@firebase/messaging/src/api.ts:56:29[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 5.92 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (e72a4cff4435eecc)
+[1m[31mDebugger listening on ws://localhost:9229/435084f3-28fc-4ff4-b727-33d56eeb3999[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/435084f3-28fc-4ff4-b727-33d56eeb3999[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 5.97 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (2b95f094b5320bfc)
+[1m[31mDebugger listening on ws://localhost:9229/a4e868ce-015f-48c1-b346-156a81c94888[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/a4e868ce-015f-48c1-b346-156a81c94888[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 5.96 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (2a5e026ec3f9cdef)
+[1m[31mDebugger listening on ws://localhost:9229/49a19b7d-288a-4170-a859-6b9ec7cebbeb[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/49a19b7d-288a-4170-a859-6b9ec7cebbeb[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 5.95 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d0fa8f90dd9e3ea4)
+[1m[31mDebugger listening on ws://localhost:9229/158bd6f1-fa7c-4418-a87d-5825920f2073[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/158bd6f1-fa7c-4418-a87d-5825920f2073[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 5.95 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d355e789e324fbef)
+[1m[31mDebugger listening on ws://localhost:9229/99480c0c-d4e0-4623-b66c-8c7b257401b9[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/99480c0c-d4e0-4623-b66c-8c7b257401b9[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 5.99 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f3bb8d81530a585a)
+[1m[31mDebugger listening on ws://localhost:9229/a6d16032-0e3f-4f58-9627-9ac7f598da94[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/a6d16032-0e3f-4f58-9627-9ac7f598da94[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.12 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (41b5a7a651715a66)
+[1m[31mDebugger listening on ws://localhost:9229/fab3c8e2-0ff6-468e-a733-e3c974f59973[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/fab3c8e2-0ff6-468e-a733-e3c974f59973[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 6.22 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (7fc869494d320480)
+[1m[31mDebugger listening on ws://localhost:9229/53084ff2-4c88-4b67-abcd-d3deae662419[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/53084ff2-4c88-4b67-abcd-d3deae662419[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m

@@ -1,28 +1,30 @@
-const amqp = require('amqplib');
-const admin = require('firebase-admin');
-const serviceAccount = require('path/to/your/serviceAccountKey.json');
+import express from 'express';
+import { subscribeToTopic, sendNotificationToTopic } from './topics';
+import "./notificationServer";
 
-async function main() {
-  try {
-    const connection = await amqp.connect('amqp://localhost');
-    const channel = await connection.createChannel();
-    const queue = 'email_queue';
+const app = express();
+const port = process.env.PORT || 3002;
 
-    await channel.assertQueue(queue, { durable: false });
+app.use(express.json());
 
-    console.log('Email service is waiting for messages...');
+app.post('/subscribe', (req, res) => {
+  const { userToken, topicName } = req.body;
 
-    channel.consume(queue, (msg: { content: { toString: () => string; }; }) => {
-      const messageData = JSON.parse(msg.content.toString());
+  subscribeToTopic(userToken, topicName)
+    .then(() => {
+      res.status(200).send('Usuario suscrito al tópico');
+    })
+    .catch((error) => {
+      res.status(500).send('Error al suscribir al usuario al tópico: ' + error);
+    });
+});
 
-      // Lógica para enviar correos electrónicos utilizando Firebase
-      // Puedes utilizar admin.messaging().send() u otra función de Firebase.
+app.post("/send", async (req, res) => {
+  const { topicName } = req.body;
+  await sendNotificationToTopic(topicName, { title: 'Título', body: "message" })
+  res.status(200).send("Mensaje enviado");
+})
 
-      console.log('Email sent:', messageData);
-    }, { noAck: true });
-  } catch (error) {
-    console.error('Error:', error);
-  }
-}
-
-main();
+app.listen(port, () => {
+  console.log(`Servidor escuchando en el puerto ${port}`);
+});

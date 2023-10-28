@@ -6,9 +6,9 @@ spec:
   selector:
     app: bike
   ports:
-  - name: http
-    port: 80
-    targetPort: 3000
+    - name: http
+      port: 80
+      targetPort: 3000
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -30,20 +30,39 @@ spec:
         app: bike
     spec:
       containers:
-      - name: bike
-        image: bikers-community/bookig:latest
-        ports:
-        - containerPort: 3000
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 3000
-          initialDelaySeconds: 5
-          periodSeconds: 5
-        resources:
-          requests:
-            memory: "250Mi"
-            cpu: "500m"
-          limits:
-            memory: "250Mi"
-            cpu: "500m"
+        - name: bike
+          image: bikers-community/bookig:latest
+          ports:
+            - containerPort: 3000
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          resources:
+            requests:
+              memory: '250Mi'
+              cpu: '500m'
+            limits:
+              memory: '250Mi'
+              cpu: '500m'
+          env:
+            - name: PORT
+              value: '3000'
+            - name: BROKER_HOST
+              value: 'localhost'
+            - name: BROKER_PORT
+              value: '5672'
+            - name: DB_URL
+              value: 'mongodb+srv://admin:admin@bikers-community.xhtftcd.mongodb.net/?retryWrites=true&w=majority'
+            - name: DB_NAME
+              value: 'booking'
+            - name: DB_USER
+              value: 'bikers-community'
+            - name: DB_PASSWORD
+              value: 'bikers-community'
+            - name: DB_HOST
+              value: 'localhost'
+            - name: DB_PORT
+              value: '27017'

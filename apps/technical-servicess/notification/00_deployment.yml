@@ -1,37 +1,37 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: map
+  name: notification
 spec:
   selector:
-    app: map
+    app: notification
   ports:
   - name: http
-    port: 80
-    targetPort: 3000
+    port: 3000
+    targetPort: notification-service
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: map
+  name: notification
   labels:
-    app: map
+    app: notification
     layer: backend
-    type: microservice
+    type: technical-service
     name: bikers-community
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: map
+      app: notification
   template:
     metadata:
       labels:
-        app: map
+        app: notification
     spec:
       containers:
-      - name: map
-        image: jmvalenciz/bikers-community-map:latest
+      - name: notification
+        image: jmvalenciz/bikers-community-notification:latest
         ports:
         - containerPort: 3000
         livenessProbe:

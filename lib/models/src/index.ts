@@ -6,6 +6,7 @@ export * from './general/object_id';
 export * from './booking';
 export * from './event';
 export * from './routes';
+export * from './user';
 
 export const validate = (schema: AnyZodObject) =>
   async (req: Request, res: Response, next: NextFunction) => {

@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: notification
-        image: jmvalenciz/bikers-community-notification:latest
+        image: registry.hub.docker.com/jmvalenciz/bikers-community-notification:latest
         ports:
         - containerPort: 3000
         livenessProbe:

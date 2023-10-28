@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build-event": "nx build events && docker build -f apps/microservices/events/Dockerfile -t bikers-community/event .",
-    "build-booking": "nx build booking && docker build -f apps/microservices/booking/Dockerfile -t bikers-community/booking .",
-    "build-bike": "nx build bike && docker build -f apps/microservices/bike/Dockerfile -t bikers-community/bike .",
-    "build-map": "nx build map && docker build -f apps/microservices/map/Dockerfile -t bikers-community/map ."
+    "build-event": "nx build events && docker build -f apps/microservices/events/Dockerfile -t jmvalenciz/bikers-community-event .",
+    "build-booking": "nx build booking && docker build -f apps/microservices/booking/Dockerfile -t jmvalenciz/bikers-community-booking .",
+    "build-bike": "nx build bike && docker build -f apps/microservices/bike/Dockerfile -t jmvalenciz/bikers-community-bike .",
+    "build-map": "nx build map && docker build -f apps/microservices/map/Dockerfile -t jmvalenciz/bikers-community-map .",
+    "build-notification": "nx build notification && docker build -f apps/technical-servicess/notification/Dockerfile -t jmvalenciz/bikers-community-notification ."
   },
   "private": true,
   "dependencies": {

@@ -1,9 +1,9 @@
 import { Types } from 'mongoose';
 import { UserDataStore } from './db/datastore';
-import { NewUser, User, UserData } from '@bikers-community/models';
+import { NewUser, User } from '@bikers-community/models';
 
 
-export class UserController {
+export class UserController { 
   static async newUser(
     newUser: NewUser
   ): Promise<User> {

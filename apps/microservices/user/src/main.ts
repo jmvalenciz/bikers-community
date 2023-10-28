@@ -1,22 +1,46 @@
-/**
- * This is not a production server yet!
- * This is only a minimal backend to get started.
- */
+import express from 'express';
+import morgan from 'morgan';
+import amqplib, { Channel } from 'amqplib';
+import { env } from './utils/environment';
+import mongoose from 'mongoose';
 
-import { Logger } from '@nestjs/common';
-import { NestFactory } from '@nestjs/core';
+import { ApiRouterV1 } from './v1/user';
 
-import { AppModule } from './app/app.module';
-
-async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  const globalPrefix = 'api';
-  app.setGlobalPrefix(globalPrefix);
-  const port = process.env.PORT || 3000;
-  await app.listen(port);
-  Logger.log(
-    `🚀 Application is running on: http://localhost:${port}/${globalPrefix}`
-  );
+if(env.NODE_ENV != 'development'){
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  console.debug = ()=>{};
 }
 
-bootstrap();
+const app = express();
+
+app.use(morgan('tiny'));
+
+let channel: Channel;
+
+app.use(express.json());
+
+async function main() {
+  try {
+      const connection = await amqplib.connect(
+      `amqp://${env.BROKER.URL}:${env.BROKER.PORT}`
+      );
+      await mongoose.connect(`mongodb://${env.DB.USER}:${env.DB.PASSWORD}@${env.DB.URL}:${env.DB.PORT}/user`, {authSource:"admin"})
+    channel = await connection.createChannel();
+  } catch (err) {
+    console.log(err)
+    process.exit(1)
+    return
+  }
+  await channel.assertQueue(env.BROKER.QUEUE, { durable: false });
+  console.debug(`Broker listening at amqp://${env.BROKER.QUEUE}:${env.BROKER.PORT}\nQUEUE: ${env.BROKER.QUEUE}`);
+  const server = app.listen(env.PORT, () => {
+    console.debug(`Listening at http://localhost:${env.PORT}/api/user`);
+  });
+  app.use((req, _, next) => {
+    //req.channel = channel;
+    next();
+  });
+  server.on('error', console.error);
+  app.use('/api/user/v1', ApiRouterV1);
+}
+main();

@@ -16,7 +16,8 @@
         "tsConfig": "apps/microservices/events/tsconfig.app.json",
         "assets": ["apps/microservices/events/src/assets"],
         "isolatedConfig": true,
-        "webpackConfig": "apps/microservices/events/webpack.config.js"
+        "webpackConfig": "apps/microservices/events/webpack.config.js",
+        "generatePackageJson": true
       },
       "configurations": {
         "development": {},
@@ -31,7 +32,12 @@
       },
       "configurations": {
         "development": {
-          "buildTarget": "events:build:development"
+          "buildTarget": "events:build:development",
+          "runtimeArgs": ["-r", "dotenv/config"],
+          "args": [
+            "dotenv_config_path=./apps/microservices/events/.env", 
+            "dotenv_config_debug=true"
+          ]
         },
         "production": {
           "buildTarget": "events:build:production"
@@ -39,7 +45,7 @@
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["apps/microservices/events/**/*.ts"]

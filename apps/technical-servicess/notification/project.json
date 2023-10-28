@@ -1,7 +1,7 @@
 {
-  "name": "notifications",
+  "name": "notification",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/technical-servicess/notifications/src",
+  "sourceRoot": "apps/technical-servicess/notification/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -11,12 +11,12 @@
       "options": {
         "target": "node",
         "compiler": "tsc",
-        "outputPath": "dist/apps/technical-servicess/notifications",
-        "main": "apps/technical-servicess/notifications/src/main.ts",
-        "tsConfig": "apps/technical-servicess/notifications/tsconfig.app.json",
-        "assets": ["apps/technical-servicess/notifications/src/assets"],
+        "outputPath": "dist/apps/technical-servicess/notification",
+        "main": "apps/technical-servicess/notification/src/main.ts",
+        "tsConfig": "apps/technical-servicess/notification/tsconfig.app.json",
+        "assets": ["apps/technical-servicess/notification/src/assets"],
         "isolatedConfig": true,
-        "webpackConfig": "apps/technical-servicess/notifications/webpack.config.js"
+        "webpackConfig": "apps/technical-servicess/notification/webpack.config.js"
       },
       "configurations": {
         "development": {},
@@ -27,29 +27,29 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "notifications:build"
+        "buildTarget": "notification:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "notifications:build:development"
+          "buildTarget": "notification:build:development"
         },
         "production": {
-          "buildTarget": "notifications:build:production"
+          "buildTarget": "notification:build:production"
         }
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/technical-servicess/notifications/**/*.ts"]
+        "lintFilePatterns": ["apps/technical-servicess/notification/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/technical-servicess/notifications/jest.config.ts",
+        "jestConfig": "apps/technical-servicess/notification/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {

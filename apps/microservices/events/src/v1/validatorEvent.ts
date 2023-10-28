@@ -7,20 +7,25 @@ export const getEventValidator = z.object({
     })
 });
 
-//esta correcto?
-export const deleteEventValidator = z.object({
-    params: z.object({
-        eventId: ObjectIdSchema
-    })
-});
-
 export const createEventValidator = z.object({
     body: NewEvent
 });
 
 export const updateEventValidator = z.object({
-    body: UpdateEvent
+    body: UpdateEvent,
+    params: z.object({
+        eventId: ObjectIdSchema,
+    })
 });
 
+export const deleteEventValidator = z.object({
+    params: z.object({
+        eventId: ObjectIdSchema,
+    })
+});
+
+
+export const getEventListValidator = z.object({
+});
 
 

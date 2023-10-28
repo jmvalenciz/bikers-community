@@ -31,7 +31,12 @@
       },
       "configurations": {
         "development": {
-          "buildTarget": "events:build:development"
+          "buildTarget": "events:build:development",
+          "runtimeArgs": ["-r", "dotenv/config"],
+          "args": [
+            "dotenv_config_path=./apps/microservices/events/.env", 
+            "dotenv_config_debug=true"
+          ]
         },
         "production": {
           "buildTarget": "events:build:production"

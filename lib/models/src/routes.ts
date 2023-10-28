@@ -9,8 +9,8 @@ export const Route = z.object({
     createdAt: z.date(),
     routeName: z.string().min(3).max(250),
     routeLocation: z.object({
-        type: z.literal('Point'),
-        coordinates: z.number().array(),
+        lng: z.number(),
+        lat: z.number(),
     }),
     description: z.string().min(3).max(500),
     routeDate: z.date()

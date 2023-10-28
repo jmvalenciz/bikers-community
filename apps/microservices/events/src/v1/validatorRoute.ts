@@ -7,17 +7,23 @@ export const getRouteValidator = z.object({
     })
 });
 
-//esta correcto?
-export const deleteRouteValidator = z.object({
-    params: z.object({
-        routeId: ObjectIdSchema
-    })
-});
-
 export const createRouteValidator = z.object({
     body: NewRoute
 });
 
 export const updateRouteValidator = z.object({
-    body: UpdateRoute
+    body: UpdateRoute,
+    params: z.object({
+        routeId: ObjectIdSchema,
+    })
+});
+
+export const deleteRouteValidator = z.object({
+    params: z.object({
+        routeId: ObjectIdSchema,
+    })
+});
+
+
+export const getRouteListValidator = z.object({
 });

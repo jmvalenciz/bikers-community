@@ -1,0 +1,28 @@
+services:
+
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: bikers-community
+      MONGO_INITDB_ROOT_PASSWORD: bikers-community
+      MONGO_INITDB_DATABASE: bikers-community
+    ports:
+      - 27017:27017
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: bikers-community
+      ME_CONFIG_MONGODB_ADMINPASSWORD: bikers-community
+      ME_CONFIG_MONGODB_URL: mongodb://bikers-community:bikers-community@mongo:27017/
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672

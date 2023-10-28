@@ -4,6 +4,7 @@ import { Request, Response, NextFunction } from 'express';
 export * from './bike';
 export * from './general/object_id';
 export * from './booking';
+export * from './map';
 export * from './event';
 export * from './routes';
 export * from './user';

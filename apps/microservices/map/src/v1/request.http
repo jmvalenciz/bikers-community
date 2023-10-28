@@ -1,7 +1,7 @@
 @host= http://localhost:3000
 @userId= 653af742e010444afd03df99
-@bikeId= 653ca73721618038231ea146
-@bookingId= 653cabc9a40456e2e467a144
+@bikeId= 653af74d283e77ac6042bf17
+@bookingId= 653be3ccbe442efec2237287
 ### New Booking
 POST {{host}}/api/booking/v1/
 Content-Type: application/json

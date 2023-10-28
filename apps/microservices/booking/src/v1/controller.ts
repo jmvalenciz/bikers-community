@@ -1,6 +1,6 @@
 import { Types } from 'mongoose';
 import { BookingDataStore } from './db/datastore';
-import { NewBooking, Booking } from '@bikers-community/models';
+import { NewBooking, Booking, BOOKING_STATUS } from '@bikers-community/models';
 import { BikeAdapter } from '@bikers-community/adapters';
 import { Channel } from 'amqplib';
 
@@ -13,11 +13,11 @@ export class BookingController {
       newBooking.bikeId
     );
     if (oldBooking != null) {
-      throw Error('Bike is already booked');
+      throw Error('Bike is not available');
     }
-    const bike = await BookingDataStore.newBooking(newBooking);
-    new BikeAdapter(channel).bookBike(bike.bikeId);
-    return bike;
+    const booking = await BookingDataStore.newBooking(newBooking);
+    new BikeAdapter(channel).bookBike(booking.bikeId, booking._id);
+    return booking;
   }
 
   static async getBooking(bookingId: Types.ObjectId): Promise<Booking | null> {
@@ -37,8 +37,12 @@ export class BookingController {
     }
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     booking = (await BookingDataStore.finishBooking(bookingId))!;
-    new BikeAdapter(channel).freeBike(booking.bikeId);
+    new BikeAdapter(channel).freeBike(booking.bikeId, booking._id);
     return booking;
+  }
+
+  static async updateBookingStatus(bookingId: Types.ObjectId, newStatus: typeof BOOKING_STATUS): Promise<Booking|null>{
+    return await BookingDataStore.updateBookingStatus(bookingId, newStatus);
   }
 
   static async getBookingList(userId: Types.ObjectId): Promise<Booking[]> {

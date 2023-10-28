@@ -1,22 +1,20 @@
-@host= http://localhost:3000
-@userId= 653af742e010444afd03df99
-@bikeId= 653af74d283e77ac6042bf17
+@host= http://localhost:3001
+@adminId= 653af742e010444afd03df99
+@bikeId= 653ca73721618038231ea146
 @bookingId= 653be3ccbe442efec2237287
-### New Booking
-POST {{host}}/api/booking/v1/
+### New Bike
+POST {{host}}/api/bike/v1/
 Content-Type: application/json
 
 {
-  "userId": "{{userId}}",
-  "bikeId": "{{bikeId}}"
+  "createdByAdminId": "{{adminId}}",
+  "color": "#0000",
+  "model": "Canyon Stumpjumper Evo Comp 2000",
+  "description": "Offers is a great option that punches well above its weight on performance and price"
 }
 
-### Get Booking list
-GET {{host}}/api/booking/v1/?userId={{userId}}
+### Get Bike list
+GET {{host}}/api/bike/v1/
 
-
-### Get Booking
-GET {{host}}/api/booking/v1/{{bookingId}}
-
-### Finish booking
-PUT {{host}}/api/booking/v1/{{bookingId}}
+### Get Bike
+GET {{host}}/api/bike/v1/{{bikeId}}

@@ -3,8 +3,9 @@ import morgan from 'morgan';
 import amqplib, { Channel } from 'amqplib';
 import { env } from './utils/environment';
 import mongoose from 'mongoose';
+import { BikeAdapter } from '@bikers-community/adapters';
 
-import { ApiRouterV1 } from './v1/router';
+import { ApiRouterV1, consumeBrokerV1 } from './v1/router';
 
 if (env.NODE_ENV != 'development') {
   // eslint-disable-next-line @typescript-eslint/no-empty-function
@@ -57,6 +58,7 @@ async function main() {
     }
     next();
   });
+  consumeBrokerV1(channel, BikeAdapter.queue);
 }
 
 main();

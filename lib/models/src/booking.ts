@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { ObjectIdSchema } from './general/object_id';
 
-export const BOOKING_STATUS = ['ACTIVE', 'FINISHED'] as const;
+export const BOOKING_STATUS = ['ACTIVE', 'FINISHED', 'FAILED', 'VALIDATING'] as const;
 
 export const Booking = z.object({
   _id: ObjectIdSchema,

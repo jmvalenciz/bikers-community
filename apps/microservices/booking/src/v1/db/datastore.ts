@@ -1,6 +1,6 @@
 import { HydratedDocument, Types } from 'mongoose';
 import { BookingDB } from './schemas/booking';
-import { Booking, NewBooking } from '@bikers-community/models';
+import { BOOKING_STATUS, Booking, NewBooking } from '@bikers-community/models';
 
 export class BookingDataStore {
   static async getBookingById(
@@ -12,17 +12,21 @@ export class BookingDataStore {
   static async getBookingByBikeId(
     bikeId: Types.ObjectId
   ): Promise<Booking | null> {
-    return await BookingDB.findOne({ bikeId }).lean();
+    return await BookingDB.findOne({ bikeId, status:"ACTIVE" }).lean();
   }
 
   static async newBooking(newBooking: NewBooking): Promise<Booking> {
     const booking: HydratedDocument<Booking> = new BookingDB({
       ...newBooking,
-      status: 'ACTIVE',
+      status: 'VALIDATING',
       createdAt: new Date(),
     });
     await booking.save();
     return booking;
+  }
+
+  static async updateBookingStatus(bookingId: Types.ObjectId, newStatus: typeof BOOKING_STATUS): Promise<Booking|null>{
+    return await BookingDB.findOneAndUpdate({_id: bookingId},{status:newStatus}).lean();
   }
 
   static async getBookingListByUserId(
@@ -36,7 +40,7 @@ export class BookingDataStore {
   ): Promise<Booking | null> {
     return await BookingDB.findOneAndUpdate(
       { _id: bookingId },
-      { $set: { status: 'FINISHED' } },
+      { status: 'FINISHED', finishedAt: new Date() },
       { new: true }
     ).lean();
   }

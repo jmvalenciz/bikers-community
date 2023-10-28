@@ -16,7 +16,8 @@
         "tsConfig": "apps/microservices/map/tsconfig.app.json",
         "assets": ["apps/microservices/map/src/assets"],
         "isolatedConfig": true,
-        "webpackConfig": "apps/microservices/map/webpack.config.js"
+        "webpackConfig": "apps/microservices/map/webpack.config.js",
+        "generatePackageJson": true
       },
       "configurations": {
         "development": {},
@@ -31,7 +32,12 @@
       },
       "configurations": {
         "development": {
-          "buildTarget": "map:build:development"
+          "buildTarget": "map:build:development",
+          "runtimeArgs": ["-r", "dotenv/config"],
+          "args": [
+            "dotenv_config_path=./apps/microservices/map/.env",
+            "dotenv_config_debug=true"
+          ]
         },
         "production": {
           "buildTarget": "map:build:production"
@@ -39,7 +45,7 @@
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["apps/microservices/map/**/*.ts"]

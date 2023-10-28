@@ -26,7 +26,7 @@ export class BikeDataStore {
   }
 
   static async updateBikeStatus(bikeId: Types.ObjectId, newStatus: typeof BIKE_STATUS){
-    return BikeDB.findOneAndUpdate({_id: bikeId}, {$set:{status: newStatus}}).lean();
+    return BikeDB.findOneAndUpdate({_id: bikeId}, {status: newStatus}).lean();
   }
 
   static async updateBike(
@@ -35,7 +35,7 @@ export class BikeDataStore {
   ): Promise<Bike | null> {
     return await BikeDB.findOneAndUpdate(
       { _id: bikeId },
-      { $set: {...updateBike, updatedAt: new Date()} },
+      { ...updateBike, updatedAt: new Date() },
       { new: true }
     ).lean();
   }

@@ -6,7 +6,7 @@ const BookingSchema = new Schema<Booking>(
     status: {
       type: String,
       enum: BOOKING_STATUS,
-      default: 'ACTIVE',
+      default: 'VALIDATING',
     },
     bikeId: {
       type: Schema.ObjectId,

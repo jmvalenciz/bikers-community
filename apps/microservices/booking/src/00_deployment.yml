@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: booking
-        image: jmvalenciz/bikers-community-bookig:latest
+        image: registry.hub.docker.com/jmvalenciz/bikers-community-bookig:latest
         ports:
         - containerPort: 3000
         livenessProbe:
